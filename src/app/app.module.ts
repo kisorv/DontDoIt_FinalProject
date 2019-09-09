@@ -6,6 +6,7 @@ import { WeddingComponent } from "./wedding/wedding.component";
 import { FirstDateComponent } from "./first-date/first-date.component";
 import { InterviewsComponent } from "./interviews/interviews.component";
 import { TopicsComponent } from "./topics/topics.component";
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TopicsComponent } from "./topics/topics.component";
     WeddingComponent,
     FirstDateComponent,
     InterviewsComponent,
-    TopicsComponent
+    TopicsComponent,
+    QuizComponent
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
