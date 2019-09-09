@@ -1,15 +1,19 @@
-<p>quiz works!</p>
+<h1>How Much Do You Love Life?</h1>
+<h3>TAKE A QUIZ!</h3>
 
-<div *ngFor="let question of questions; index as i">
-  {{ question.question }}
-
-  <div>
-    <input type="radio" name="{{ i }}" value="{{ question.answer1 }}" ngModel />
-    <label for="a">{{ question.answer1 }}</label>
-  </div>
-
-  <div>
-    <input type="radio" name="{{ i }}" value="{{ question.answer2 }}" ngModel />
-    <label for="b">{{ question.answer2 }}</label>
-  </div>
+<div>
+  <button>
+    <a routerLinkActive="active" routerLink="/quiz/dinner">Dinner</a>
+  </button>
+  <button>
+    <a routerLinkActive="active" routerLink="/quiz/phone">4G or No 4G?</a>
+  </button>
+  <button>
+    <a routerLinkActive="active" routerLink="/quiz/Riskybiz">Risky Business</a>
+  </button>
+  <button>
+    <a routerLinkActive="active" routerLink="/quiz/drivers">Drivers</a>
+  </button>
 </div>
+
+<router-outlet></router-outlet>
