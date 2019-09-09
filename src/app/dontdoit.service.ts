@@ -12,4 +12,9 @@ export class DontdoitService {
   getWeddingQuestions() {
     return this.http.get("http://localhost:8080/wedding");
   }
+
+  getDriversQuestions(){
+    return this.http.get("http://localhost:8080/drivers");
+  }
+
 }

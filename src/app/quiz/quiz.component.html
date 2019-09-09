@@ -1,1 +1,15 @@
 <p>quiz works!</p>
+
+<div *ngFor="let question of questions; index as i">
+  {{ question.question }}
+
+  <div>
+    <input type="radio" name="{{ i }}" value="{{ question.answer1 }}" ngModel />
+    <label for="a">{{ question.answer1 }}</label>
+  </div>
+
+  <div>
+    <input type="radio" name="{{ i }}" value="{{ question.answer2 }}" ngModel />
+    <label for="b">{{ question.answer2 }}</label>
+  </div>
+</div>
