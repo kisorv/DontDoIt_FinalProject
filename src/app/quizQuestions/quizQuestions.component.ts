@@ -27,7 +27,9 @@ export class QuizQuestionsComponent implements OnInit {
 
   submitForm(form: NgForm) {
     this.dontdoitService.calculateScore(form.value, this.questions);
-    console.log(form.value);
     form.reset();
+    this.dontdoitService.navigateToResults();
   }
+
+  
 }
