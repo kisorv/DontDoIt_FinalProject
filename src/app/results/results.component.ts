@@ -8,10 +8,14 @@ import { DontdoitService } from "../dontdoit.service";
 })
 export class ResultsComponent implements OnInit {
   score: number = 0;
+  message: string;
+
   constructor(private dontdoitService: DontdoitService) {}
 
   ngOnInit() {
     this.score = this.dontdoitService.returnScore();
+    this.message = this.dontdoitService.scoreResponse();
+    console.log(this.message);
   }
 
   handleHomeClick() {
@@ -20,5 +24,9 @@ export class ResultsComponent implements OnInit {
 
   handleQuizClick() {
     this.dontdoitService.navigateToQuiz();
+  }
+
+  resetUserScore() {
+    this.dontdoitService.resetScore();
   }
 }

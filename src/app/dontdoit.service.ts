@@ -11,6 +11,10 @@ export class DontdoitService {
   submittedAnswers: any;
   quizQuestions: any;
 
+  riskyMessage = "You live by the mantra: YOLO!";
+  normalMessage = "You like to play it safe but you're not lame.";
+  timidMessage = "You take life too seriously.";
+
   constructor(private http: HttpClient, private router: Router) {}
 
   getWeddingQuestions() {
@@ -33,8 +37,20 @@ export class DontdoitService {
     }
   }
 
+  scoreResponse() {
+    if (this.userScore > 7) {
+      return this.riskyMessage;
+    } else if (this.userScore <= 7 && this.userScore > 4) {
+      return this.normalMessage;
+    } else return this.timidMessage;
+  }
+
   returnScore() {
     return this.userScore;
+  }
+
+  resetScore() {
+    this.userScore = 0;
   }
 
   navigateToResults() {
