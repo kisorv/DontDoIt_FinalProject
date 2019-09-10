@@ -32,8 +32,5 @@ export class DontdoitService {
         this.userScore++;
       }
     }
-    console.log(this.userScore);
-    console.log(form[i]);
-    console.log(questions[i].answer1);
   }
 }
