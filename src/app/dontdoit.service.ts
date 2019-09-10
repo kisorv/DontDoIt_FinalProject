@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 // import { Router } from "@angular/router";
-import { Observable } from "rxjs";
+// import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root"
@@ -13,8 +13,7 @@ export class DontdoitService {
     return this.http.get("http://localhost:8080/wedding");
   }
 
-  getDriversQuestions(){
-    return this.http.get("http://localhost:8080/drivers");
+  getQuestions(category: string) {
+    return this.http.get(`http://localhost:8080/quiz/${category}`);
   }
-
 }
