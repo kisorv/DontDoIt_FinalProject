@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-// import { Router } from "@angular/router";
-import { Observable } from "rxjs";
+import { Router } from "@angular/router";
 
 @Injectable({
   providedIn: "root"
@@ -12,7 +11,7 @@ export class DontdoitService {
   submittedAnswers: any;
   quizQuestions: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   getWeddingQuestions() {
     return this.http.get("http://localhost:8080/wedding");
@@ -32,5 +31,21 @@ export class DontdoitService {
         this.userScore++;
       }
     }
+  }
+
+  returnScore() {
+    return this.userScore;
+  }
+
+  navigateToResults() {
+    this.router.navigate(["results"]);
+  }
+
+  navigateToHome() {
+    this.router.navigate(["home"]);
+  }
+
+  navigateToQuiz() {
+    this.router.navigate(["quiz"]);
   }
 }

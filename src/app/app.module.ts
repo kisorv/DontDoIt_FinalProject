@@ -12,6 +12,7 @@ import { DontdoitService } from "./dontdoit.service";
 import { QuizComponent } from "./quiz/quiz.component";
 import { QuizQuestionsComponent } from "./quizQuestions/quizQuestions.component";
 import { FormsModule } from "@angular/forms";
+import { ResultsComponent } from "./results/results.component";
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   { path: "topics", component: TopicsComponent },
   { path: "quiz", component: QuizComponent },
   { path: "quiz/:category", component: QuizQuestionsComponent },
+  { path: "results", component: ResultsComponent },
   { path: "", redirectTo: "/home", pathMatch: "full" }
 ];
 
@@ -33,7 +35,8 @@ const appRoutes: Routes = [
     TopicsComponent,
     HomeComponent,
     QuizComponent,
-    QuizQuestionsComponent
+    QuizQuestionsComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
