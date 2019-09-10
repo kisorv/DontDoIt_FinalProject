@@ -1,13 +1,26 @@
-<div *ngFor="let question of questions; index as i">
-  {{ question.question }}
+<form #quizForm="ngForm" (ngSubmit)="[submitForm(quizForm)]">
+  <div *ngFor="let question of questions; index as i">
+    {{ question.question }}
 
-  <div>
-    <input type="radio" name="{{ i }}" value="{{ question.answer1 }}" ngModel />
-    <label for="a">{{ question.answer1 }}</label>
-  </div>
+    <div>
+      <input
+        type="radio"
+        name="{{ i }}"
+        value="{{ question.answer1 }}"
+        ngModel
+      />
+      <label for="a">{{ question.answer1 }}</label>
+    </div>
 
-  <div>
-    <input type="radio" name="{{ i }}" value="{{ question.answer2 }}" ngModel />
-    <label for="b">{{ question.answer2 }}</label>
+    <div>
+      <input
+        type="radio"
+        name="{{ i }}"
+        value="{{ question.answer2 }}"
+        ngModel
+      />
+      <label for="b">{{ question.answer2 }}</label>
+    </div>
   </div>
-</div>
+  <button>Submit</button>
+</form>
