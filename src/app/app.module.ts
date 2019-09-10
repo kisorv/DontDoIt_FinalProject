@@ -11,6 +11,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { DontdoitService } from "./dontdoit.service";
 import { QuizComponent } from "./quiz/quiz.component";
 import { QuizQuestionsComponent } from "./quizQuestions/quizQuestions.component";
+import { NgForm } from "@angular/forms";
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     TopicsComponent,
     HomeComponent,
     QuizComponent,
-    QuizQuestionsComponent
+    QuizQuestionsComponent,
+    NgForm
   ],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
   providers: [DontdoitService],
