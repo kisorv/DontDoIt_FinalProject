@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "app-quiz",
@@ -10,8 +9,4 @@ export class QuizComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
-  // navigateToDriversQuiz() {
-  //   this.router.navigate(["drivers"]);
-  // }
 }
