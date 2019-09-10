@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-// import { NgForm } from "@angular/forms";
-import { DontdoitService } from "../dontdoit.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-quiz",
@@ -8,13 +7,11 @@ import { DontdoitService } from "../dontdoit.service";
   styleUrls: ["./quiz.component.css"]
 })
 export class QuizComponent implements OnInit {
-  questions: any;
+  constructor() {}
 
-  constructor(private dontdoitService: DontdoitService) {}
+  ngOnInit() {}
 
-  ngOnInit() {
-    this.dontdoitService.getDriversQuestions().subscribe(response => {
-      this.questions = response;
-    });
-  }
+  // navigateToDriversQuiz() {
+  //   this.router.navigate(["drivers"]);
+  // }
 }
