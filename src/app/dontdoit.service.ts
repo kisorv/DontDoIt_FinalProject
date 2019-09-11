@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root"
@@ -57,5 +58,9 @@ export class DontdoitService {
 
   navigateToQuiz() {
     this.router.navigate(["quiz"]);
+  }
+
+  getGiphyData(): Observable<any> {
+    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`)
   }
 }
