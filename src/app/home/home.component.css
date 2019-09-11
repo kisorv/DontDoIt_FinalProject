@@ -1,4 +1,30 @@
-:host {
-  display: block;
-  background-color: pink;
+section {
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  font-size: 75px;
+  font-family: "Permanent Marker", cursive;
 }
