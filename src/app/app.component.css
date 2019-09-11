@@ -1,50 +1,43 @@
-@font-face {
-    font-family: "Graffiti-Regular";
-    src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Graffiti-Shadow";
-    src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
-}
-
-@font-face {
-    font-family: "Tajawal";
-    src: url("/assets/fonts/Tajawal-Light.ttf")
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 80px;
 }
 
 h1 {
-    font-family: Graffiti-Regular;
-    justify-content: flex-start;
-}
-
-nav {
-    justify-content: flex-end;
-    display: flex;
-}
-
-section {
-    display: flex;
-    justify-content: flex-end;
+  font-family: Graffiti-Regular;
+  font-size: 32px;
 }
 
 div {
-    font-family: Tajawal;
-    display: flex;
+  display: flex;
+}
+
+.nav {
+  font-size: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-* {
-    display: flex;
-    flex-direction: row;
+@font-face {
+  font-family: "Graffiti-Regular";
+  src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Graffiti-Shadow";
+  src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("/assets/fonts/Tajawal-Light.ttf");
 }

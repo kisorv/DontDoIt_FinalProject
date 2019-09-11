@@ -1,3 +1,33 @@
+
+section {
+  width: 100%;
+  height: 500px;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  font-size: 100px;
+  font-family: Graffiti-Shadow;
+
 main {
     display: flex;
     justify-content: center;
@@ -54,6 +84,7 @@ img{
         justify-content: center;
     }
     
+
 
 
 }
