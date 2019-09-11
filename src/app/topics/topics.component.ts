@@ -3,9 +3,9 @@ import { DontdoitService } from '../dontdoit.service';
 import { delay } from 'q';
 
 @Component({
-  selector: 'app-topics',
-  templateUrl: './topics.component.html',
-  styleUrls: ['./topics.component.css']
+  selector: "app-topics",
+  templateUrl: "./topics.component.html",
+  styleUrls: ["./topics.component.css"]
 })
 export class TopicsComponent implements OnInit {
   loop: number = 1;
@@ -31,6 +31,7 @@ export class TopicsComponent implements OnInit {
     }
   }
 
+
   ngOnInit() {
     if (this.loop === 1) {
       // setTimeout(this.indexFlow, this.delay);
@@ -46,3 +47,4 @@ export class TopicsComponent implements OnInit {
   }
 
 }}
+

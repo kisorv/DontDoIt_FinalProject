@@ -1,5 +1,19 @@
-<p>topics works!</p>
+<h3>What NOT To Do!</h3>
+<p>Choose a topic...</p>
 
 
 <img src="{{textData[index].images.fixed_width.url}}">
-<app-wedding></app-wedding>
+<app-topicResponses></app-topicResponses>
+<div>
+  <button>
+    <a routerLinkActive="active" routerLink="/topics/wedding">Weddings</a>
+  </button>
+  <button>
+    <a routerLinkActive="active" routerLink="/topics/interviews">Interviews</a>
+  </button>
+  <button>
+    <a routerLinkActive="active" routerLink="/topics/firstdate">First Dates</a>
+  </button>
+</div>
+
+<router-outlet></router-outlet>
