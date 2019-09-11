@@ -1,7 +1,6 @@
 section {
   width: 100%;
   height: 500px;
-  /* background-color: red; */
   background-image: url("src/assets/caution.jpg");
   background-size: cover;
   position: relative;
@@ -25,6 +24,6 @@ div {
 
 p {
   color: white;
-  font-size: 75px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 100px;
+  font-family: Graffiti-Shadow;
 }
