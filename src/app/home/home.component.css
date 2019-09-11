@@ -18,12 +18,20 @@ section {
 
 div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-p {
+#title {
   color: white;
   font-size: 100px;
   font-family: Graffiti-Shadow;
+  margin: 0;
+}
+
+#tagline {
+  color: white;
+  font-size: 20px;
+  margin: 0;
 }
