@@ -27,11 +27,13 @@ p {
   color: white;
   font-size: 100px;
   font-family: Graffiti-Shadow;
+}
 
 main {
     display: flex;
     justify-content: center;
 }
+
 
 
 .gif {
