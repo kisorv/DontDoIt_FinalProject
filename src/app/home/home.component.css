@@ -1,90 +1,89 @@
-
 section {
-  width: 100%;
-  height: 500px;
-  background-image: url("src/assets/caution.jpg");
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background-image: url("src/assets/caution.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-p {
-  color: white;
-  font-size: 100px;
-  font-family: Graffiti-Shadow;
+#title {
+    color: white;
+    font-size: 75px;
+    font-family: Graffiti-Shadow;
+}
 
 main {
     display: flex;
     justify-content: center;
-}
-
-
-.gif {
-    /* border-style: dashed;
-    border-width: medium;
-    border-color: orange; */
-    border: 0.5px solid gray;
-    background-size: contain;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-
-  
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-img{
-    width: 200px;
-    height: 200px;
-    /* padding: 15px 15px 10px 15px; */
-  }
-
-.quiz {
-    /* border-style: dashed;
-    border-width: medium;
-    border-color: blue; */
+.container {
     border: 0.5px solid gray;
-    width: 200px;
-    height: 200px;
-    /* padding: 20px; */
-    
-  
+    width: 350px;
+    height: 350px;
 }
 
-.topics {
-    /* border-style: dashed;
-    border-width: medium;
-    border-color: green; */
-    border: 0.5px solid gray;
-    width: 200px;
-    height: 200px;
-    /* padding: 20px; */
-
-  
+img {
+    width: 349px;
+    height: 349px;
 }
 
+div.container {
+    flex-direction: column;
+}
+
+h3 {
+    width: 200px;
+}
+
+.quiz: hover {}
+
+.topics: hover {}
+
+/* .dot {
+    height: 150px;
+    width: 150px;
+    background-color: #a42102;
+    border-radius: 50%;
+    display: inline-block;
+} */
+
+p {
+    font-family: Graffiti-Regular;
+    font-size: 50px;
+}
 
 @media only screen and (min-width: 768px) {
-
     main {
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
-    
-
-
-
+    .container {
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+    #title {
+        font-size: 100px;
+    }
 }
