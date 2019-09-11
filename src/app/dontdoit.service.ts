@@ -9,8 +9,6 @@ import { Observable } from "rxjs";
 export class DontdoitService {
   userScore: number = 0;
   questions: any;
-  submittedAnswers: any;
-  quizQuestions: any;
 
   riskyMessage = "You live by the mantra: YOLO!";
   normalMessage = "You like to play it safe but you're not lame.";
@@ -18,8 +16,8 @@ export class DontdoitService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  getWeddingQuestions() {
-    return this.http.get("http://localhost:8080/wedding");
+  getTopics(category: string) {
+    return this.http.get(`http://localhost:8080/topics/${category}`);
   }
 
   getQuestions(category: string) {
@@ -27,10 +25,6 @@ export class DontdoitService {
   }
 
   calculateScore(form: any, questions: any): any {
-    console.log(form, questions);
-    this.submittedAnswers = form;
-    this.quizQuestions = questions;
-
     for (let i = 0; i < questions.length; i++) {
       if (form[i] === questions[i].answer1) {
         this.userScore++;

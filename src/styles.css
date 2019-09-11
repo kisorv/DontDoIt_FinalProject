@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Tajawal";
+    src: url("/assets/fonts/Tajawal-Light.ttf")
+}
+
+@font-face {
+    font-family: "Graffiti-Regular";
+    src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
+}
+
+* {
+    font-family: Tajawal;
+}
