@@ -1,90 +1,87 @@
 section {
-    width: 100%;
-    height: 500px;
-    background-image: url("src/assets/caution.jpg");
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 500px;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 #title {
-    color: white;
-    font-size: 75px;
-    font-family: Graffiti-Shadow;
+  color: white;
+  font-size: 75px;
+  font-family: Graffiti-Shadow;
+}
 
 p {
   color: white;
   font-size: 100px;
   font-family: Graffiti-Shadow;
-
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-
 .container {
-    border: 0.5px solid gray;
-    width: 350px;
-    height: 350px;
+  border: 0.5px solid gray;
+  width: 350px;
+  height: 350px;
 }
 
 img {
-    width: 349px;
-    height: 349px;
+  width: 349px;
+  height: 349px;
 }
 
 div.container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 h3 {
-    width: 200px;
+  width: 200px;
 }
 
-.quiz: hover {}
+/* .quiz: hover {}
 
-.topics: hover {}
-
+.topics: hover {} */
 
 p {
-    font-family: Graffiti-Regular;
-    font-size: 50px;
+  font-family: Graffiti-Regular;
+  font-size: 50px;
 }
 
 @media only screen and (min-width: 768px) {
-    main {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .container {
-        margin-top: 200px;
-        margin-bottom: 150px;
-    }
-    #title {
-        font-size: 100px;
-    }
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .container {
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
+  #title {
+    font-size: 100px;
+  }
 }
