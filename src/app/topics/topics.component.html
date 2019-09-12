@@ -1,8 +1,12 @@
+
+<div class="page">
 <h3>What NOT To Do!</h3>
 <p>Choose a topic...</p>
-
-
+<div class="gif">
+        
 <img src="{{textData[index].images.fixed_width.url}}">
+</div>
+
 <app-topicResponses></app-topicResponses>
 <div>
   <button>
@@ -14,6 +18,7 @@
   <button>
     <a routerLinkActive="active" routerLink="/topics/firstdate">First Dates</a>
   </button>
+</div>
 </div>
 
 <router-outlet></router-outlet>

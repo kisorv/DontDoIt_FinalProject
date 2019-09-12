@@ -2,3 +2,23 @@ a {
     text-decoration: none;
     color: black;
 }
+
+
+.gif {
+    /* border-style: dashed;
+    border-width: medium;
+    border-color: orange; */
+    border: 0.5px solid gray;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+
+  
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    /* padding: 15px 15px 10px 15px; */
+  }
+
