@@ -1,43 +1,53 @@
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
 }
 
 h1 {
-  font-family: Graffiti-Regular;
-  font-size: 32px;
+    font-family: Graffiti-Regular;
+    font-size: 22px;
 }
 
 div {
-  display: flex;
+    display: flex;
 }
 
 .nav {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @font-face {
-  font-family: "Graffiti-Regular";
-  src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
+    font-family: "Graffiti-Regular";
+    src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Graffiti-Shadow";
-  src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
+    font-family: "Graffiti-Shadow";
+    src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
 }
 
 @font-face {
-  font-family: "Tajawal";
-  src: url("/assets/fonts/Tajawal-Light.ttf");
+    font-family: "Tajawal";
+    src: url("/assets/fonts/Tajawal-Light.ttf");
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-family: Graffiti-Regular;
+        font-size: 32px;
+    }
+    header {
+        margin: 0px 80px;
+    }
 }
