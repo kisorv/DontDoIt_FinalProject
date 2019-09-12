@@ -22,10 +22,17 @@ div {
     align-items: center;
 }
 
+
 #title {
     color: white;
     font-size: 75px;
     font-family: Graffiti-Shadow;
+
+p {
+  color: white;
+  font-size: 100px;
+  font-family: Graffiti-Shadow;
+
 }
 
 main {
@@ -36,6 +43,7 @@ main {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 
 .container {
     border: 0.5px solid gray;
@@ -60,13 +68,6 @@ h3 {
 
 .topics: hover {}
 
-/* .dot {
-    height: 150px;
-    width: 150px;
-    background-color: #a42102;
-    border-radius: 50%;
-    display: inline-block;
-} */
 
 p {
     font-family: Graffiti-Regular;

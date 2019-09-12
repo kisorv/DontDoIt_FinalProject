@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+}
+
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  padding: 20px 0px 20px 0px;
+}
+
+form {
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+div.questions {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 40px 0px 0px 40px;
+}
+
+button {
+  align-self: center;
+}
+
+/* div.answers {
+} */
+
+/* input {
+  font-size: 15px;
+  font-family: Graffiti-Shadow;
+  color: black;
+} */
