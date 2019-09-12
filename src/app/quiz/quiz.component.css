@@ -4,6 +4,10 @@ a {
 }
 
 
+:host {
+    background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+  }
+
 .gif {
     /* border-style: dashed;
     border-width: medium;

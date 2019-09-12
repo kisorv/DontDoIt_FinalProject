@@ -26,7 +26,15 @@ div.questions {
 }
 
 button {
-  align-self: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.buttonWrapper {
+    text-align: center;
+    padding: 25px;
+    
+   
 }
 
 /* div.answers {

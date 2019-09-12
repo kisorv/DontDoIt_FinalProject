@@ -1,6 +1,7 @@
 :host {
   display: block;
-  background-color: orange;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
 }
 a {
     text-decoration: none;
