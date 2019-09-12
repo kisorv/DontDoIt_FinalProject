@@ -1,0 +1,46 @@
+:host {
+    display: block;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+:host:hover {
+    background-color: #fdc700;
+}
+
+section {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image1 {
+    background-image: url("src/assets/headshots/sugene.jpg");
+    background-size: cover;
+}
+
+.image2 {
+    background-image: url("src/assets/headshots/matt.jpeg");
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url("src/assets/headshots/veronica.jpeg");
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url("src/assets/headshots/claire.jpeg");
+    background-size: cover;
+}
+
+div {
+    background-position: center center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+}

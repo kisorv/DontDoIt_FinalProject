@@ -16,16 +16,23 @@ form {
     -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
     border-radius: 20px;
+    width: 65%;
 }
 
 div.questions {
     font-weight: bold;
-    font-size: 20px;
-    padding: 40px 0px 0px 40px;
+    font-size: 25px;
+    padding: 40px 5px 5px 40px;
 }
 
 button {
-    align-self: center;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.buttonWrapper {
+    text-align: center;
+    padding: 25px;
 }
 
 /* div.answers {
