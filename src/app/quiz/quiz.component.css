@@ -1,11 +1,24 @@
 a {
     text-decoration: none;
+    
     color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 5em;
+}
+
+h3 {
+  color: white;
+  font-size: 5em;
 }
 
 
 :host {
-    background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+  display: block;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
   }
 
 .gif {
@@ -20,9 +33,29 @@ a {
   
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.quizButtons {
+    text-align: center;
+    padding: 5px;
+  
+}
+
+button {
+  font-size: 50px;
+  padding: 20px 5px 5px 10px;
+  margin: 10px;
+  border-radius: 3%;
+}
+
 img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     /* padding: 15px 15px 10px 15px; */
   }
 
