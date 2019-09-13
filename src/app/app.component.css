@@ -25,7 +25,44 @@ a {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
 }
+
+.nav {
+    position: relative;
+  }
+  
+  .nav::before, .nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color:black;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .nav::before {
+    top: 0;
+    transform-origin: center right;
+  }
+  
+  .nav:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+  
+  .nav::after {
+    bottom: 0;
+    transform-origin: center left;
+  }
+  
+  .nav:hover::after {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }
+  
 
 @font-face {
     font-family: "Graffiti-Regular";
