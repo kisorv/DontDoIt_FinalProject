@@ -76,13 +76,13 @@ div {
   font-size: 25px;
   margin: 0;
   position: relative;
-  animation-name: content;
+  animation-name: flyIn;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   /* padding: 30px; */
 }
 
-@keyframes content {
+@keyframes flyIn {
   0% {
     left: -1000px;
   }
