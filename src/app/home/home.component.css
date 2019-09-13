@@ -20,22 +20,14 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 #title {
   color: white;
   font-size: 75px;
   font-family: Graffiti-Shadow;
-  margin: 0;
 }
 
-#tagline {
-  color: white;
-  font-size: 25px;
-  margin: 0;
-  animation: bounceInLeft;
-}
 
 img{
     width: 200x;
@@ -69,21 +61,14 @@ div.container {
 }
 
 h3 {
-  text-align: center;
   width: 200px;
 }
 
 
-h1 {
+p {
   font-family: Graffiti-Regular;
   font-size: 50px;
 }
-
-
-
-
-
-
 
 @media only screen and (min-width: 768px) {
   main {
@@ -99,5 +84,3 @@ h1 {
     font-size: 100px;
   }
 }
-
-
