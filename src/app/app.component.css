@@ -2,12 +2,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 80px;
+  margin: 0px 20px;
 }
 
 h1 {
   font-family: Graffiti-Regular;
-  font-size: 32px;
+  font-size: 22px;
 }
 
 div {
@@ -27,17 +27,12 @@ a {
   padding-right: 10px;
 }
 
-@font-face {
-  font-family: "Graffiti-Regular";
-  src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Graffiti-Shadow";
-  src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
-}
-
-@font-face {
-  font-family: "Tajawal";
-  src: url("/assets/fonts/Tajawal-Light.ttf");
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: Graffiti-Regular;
+    font-size: 32px;
+  }
+  header {
+    margin: 0px 80px;
+  }
 }

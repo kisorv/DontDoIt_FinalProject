@@ -1,4 +1,3 @@
-
 <section>
   <div class="overlay">
     <p id="title">DON'T DO IT</p>
@@ -6,16 +5,37 @@
   </div>
 </section>
 
+<div>
+  <h1>Welcome</h1>
+  <p>
+    Are you a risk taker? Have fun distracting yourself from the inevitable
+    void.
+  </p>
+</div>
+
 <main>
-<div class="quiz">
-    <p>this is the quiz</p>
-</div>
-<div class="gif">
-<img src="{{giphyData[index].images.fixed_width.url}}">
-</div>
-<div class="topics">
-    <p>these are the topics</p>
-</div>
+  <a href="/quiz"
+    ><div class="quiz container">
+      <h1>RISK ANALYSIS</h1>
+      <h3>
+        Check yourself before you wreck yourself by taking our four extreme
+        quizzes!
+      </h3>
+    </div></a
+  >
+
+  <div class="gif container">
+    <img src="{{ giphyData[index].images.fixed_width.url }}" />
+  </div>
+
+  <a href="/topics"
+    ><div class="topics container">
+      <h1>TWO CENTS</h1>
+      <h3>Life Hacks 101. What NOT to do!</h3>
+    </div></a
+  >
 </main>
 
-
+<footer>
+  <p>The footer info goes here</p>
+</footer>

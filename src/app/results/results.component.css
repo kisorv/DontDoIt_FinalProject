@@ -1,5 +1,41 @@
-div {
+:host {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
 }
 
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  border-radius: 15px;
+  width: 50%;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.btn {
+border: 5px solid white;
+width: 50%;
+display: flex;
+justify-content: space-around;
+}
+
+button {
+margin-top: 20px;
+
+}

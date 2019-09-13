@@ -1,13 +1,12 @@
-<div>
-<h1>{{ score }}/10</h1>
-<p>{{ message }}</p>
-<img src="{{giphyResultsData[index].images.fixed_width.url}}">
+<div class="scoreContainer">
+  <p id="score">Your score: {{ score }} out of 10</p>
+  <img src="{{ giphyResultsData[index].images.fixed_width.url }}" />
+  <p id="message">{{ message }}</p>
 </div>
 
-
-<button (click)="[handleHomeClick(), resetUserScore()]">Return Home</button>
-<button (click)="[handleQuizClick(), resetUserScore()]">
-  Take Another Quiz
-</button>
-
-
+<div class="btn">
+  <button (click)="[handleHomeClick(), resetUserScore()]">Return Home</button>
+  <button (click)="[handleQuizClick(), resetUserScore()]">
+    Take Another Quiz
+  </button>
+</div>

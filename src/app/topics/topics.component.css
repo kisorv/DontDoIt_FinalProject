@@ -1,8 +1,32 @@
 :host {
   display: block;
-  background-color: orange;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
 }
 a {
     text-decoration: none;
     color: black;
 }
+
+
+.gif {
+    border: 0.5px solid gray;
+    background-size: contain;
+    display: flex;
+    
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    /* padding: 15px 15px 10px 15px; */
+  }
+
