@@ -7,13 +7,11 @@ section {
   overflow: hidden;
 }
 
-
-
-  :host {
-    /* display: block;
+:host {
+  /* display: block;
     height: 400vh; */
-    background-image: linear-gradient(to bottom right, #a42102, #fdc700);
-    }
+  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+}
 
 .overlay {
   position: absolute;
@@ -22,7 +20,6 @@ section {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  
 }
 
 div {
@@ -37,22 +34,68 @@ div {
   font-size: 75px;
   font-family: Graffiti-Shadow;
   margin: 0;
+  animation-name: flipInX;
+  animation-duration: 3s;
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
 }
 
 #tagline {
   color: white;
   font-size: 25px;
   margin: 0;
-  animation: bounceInLeft;
-  padding: 30px;
+  position: relative;
+  animation-name: content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* padding: 30px; */
 }
 
-img{
-    width: 200x;
-    height: 200px;
-    /* padding: 15px 15px 10px 15px; */
+@keyframes content {
+  0% {
+    left: -1000px;
   }
+  100% {
+    left: 0;
+  }
+}
 
+img {
+  width: 200x;
+  height: 200px;
+  /* padding: 15px 15px 10px 15px; */
+}
 
 main {
   display: flex;
@@ -78,22 +121,50 @@ div.container {
   flex-direction: column;
 }
 
+.quiz.container {
+  background-image: linear-gradient(to bottom right, #da7701, #a42102);
+}
+
+.topics.container {
+  background-image: linear-gradient(to bottom right, #da7701, #a42102);
+}
+
+.quiz.container:hover {
+  animation-name: pulse;
+  animation-duration: 3s;
+}
+
+.topics.container:hover {
+  animation-name: pulse;
+  animation-duration: 3s;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 h3 {
   text-align: center;
   width: 200px;
 }
 
-
 h1 {
   font-family: Graffiti-Regular;
   font-size: 50px;
 }
-
-
-
-
-
-
 
 @media only screen and (min-width: 768px) {
   main {
@@ -109,5 +180,3 @@ h1 {
     font-size: 100px;
   }
 }
-
-
