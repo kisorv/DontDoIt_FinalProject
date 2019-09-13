@@ -23,4 +23,12 @@ export class TopicResponsesComponent implements OnInit {
       this.answers = response;
     });
   }
+
+  handleHomeClick() {
+    this.dontdoitService.navigateToHome();
+  }
+
+  handleTopicsClick() {
+    this.dontdoitService.navigateToTopics();
+  }
 }

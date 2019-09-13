@@ -64,20 +64,6 @@ a {
   }
   
 
-@font-face {
-    font-family: "Graffiti-Regular";
-    src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Graffiti-Shadow";
-    src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
-}
-
-@font-face {
-    font-family: "Tajawal";
-    src: url("/assets/fonts/Tajawal-Light.ttf");
-}
 
 @media only screen and (min-width: 768px) {
     h1 {
