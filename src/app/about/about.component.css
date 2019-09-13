@@ -1,19 +1,28 @@
 :host {
     display: block;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     color: white;
+    text-align: center;
 }
 
-:host:hover {
-    background-color: #fdc700;
+h1 {
+    padding-top: 25px;
+}
+
+h2 {
+    font-size: 18px;
 }
 
 section {
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%px);
+}
+
+#about {
+    text-align: center;
 }
 
 .image1 {
@@ -21,9 +30,24 @@ section {
     background-size: cover;
 }
 
+.container1 {
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
 .image2 {
     background-image: url("src/assets/headshots/matt.jpeg");
     background-size: cover;
+}
+
+.container2 {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
 }
 
 .image3 {
@@ -31,16 +55,57 @@ section {
     background-size: cover;
 }
 
+.container3 {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
 .image4 {
     background-image: url("src/assets/headshots/claire.jpeg");
     background-size: cover;
 }
 
-div {
+.image4:hover {
+    background-image: url("src/assets/headshots/Fatface.JPG");
+    background-size: cover;
+}
+
+.container4 {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.team {
     background-position: center center;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     padding: 5px;
     margin: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        grid-template-columns: repeat(4, 25%);
+    }
+    .container1 {
+        grid-column-start: 3;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    .container4 {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
 }

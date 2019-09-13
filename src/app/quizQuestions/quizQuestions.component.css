@@ -1,5 +1,6 @@
 body {
-    background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+    /* background-image: linear-gradient(to bottom right, #a42102, #fdc700); */
+    background-image: linear-gradient(to bottom right, #080302, #fdc700);
 }
 
 .formWrapper {

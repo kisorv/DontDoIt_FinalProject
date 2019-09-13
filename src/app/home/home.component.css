@@ -65,6 +65,7 @@ img {
 
 div.container {
     flex-direction: column;
+    background-image: linear-gradient(to bottom right, #FFFFFF, #fdc700, #080302);
 }
 
 h3 {
