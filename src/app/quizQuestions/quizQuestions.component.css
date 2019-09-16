@@ -1,12 +1,15 @@
-body {
-  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+:host {
+  display: block;
+  height: 100%;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .formWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid;
   padding: 20px 0px 20px 0px;
 }
 
@@ -26,22 +29,25 @@ div.questions {
 }
 
 button {
-  font-size: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: black;
+  width: 30%;
   padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
 }
 
 .buttonWrapper {
-    text-align: center;
-    padding: 25px;
-    
-   
+  text-align: center;
+  padding: 25px;
 }
 
-/* div.answers {
-} */
 
-/* input {
-  font-size: 15px;
-  font-family: Graffiti-Shadow;
-  color: black;
-} */

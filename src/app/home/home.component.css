@@ -7,12 +7,6 @@ section {
   overflow: hidden;
 }
 
-:host {
-  /* display: block;
-    height: 400vh; */
-  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -91,6 +85,23 @@ div {
   }
 }
 
+.description {
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+#appDescription {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.subHeading {
+  font-family: Graffiti-Regular;
+  font-size: 50px;
+}
+
 img {
   width: 200x;
   height: 200px;
@@ -106,27 +117,22 @@ main {
 }
 
 .container {
-  border: 0.5px solid gray;
   width: 425px;
   height: 425px;
 }
 
 img {
-  width: 424px;
-  height: 424px;
+  width: 425px;
+  height: 425px;
 }
 
 div.container {
   flex-direction: column;
 }
 
-.quiz.container {
-  background-image: linear-gradient(to bottom right, #da7701, #a42102);
-}
-
-h1 {
-  font-family: Graffiti-Regular;
-  font-size: 50px;
+.quiz.container,
+.topics.container {
+  background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
 }
 
 a {
@@ -139,10 +145,6 @@ footer {
   color: white;
   bottom: 0;
   height: 40px;
-}
-
-.topics.container {
-  background-image: linear-gradient(to bottom right, #da7701, #a42102);
 }
 
 .quiz.container:hover {
@@ -164,24 +166,14 @@ footer {
   }
 
   50% {
-    -webkit-transform: scale3d(1.25, 1.25, 1.25);
-    transform: scale3d(1.25, 1.25, 1.25);
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-}
-
-h3 {
-  text-align: center;
-  width: 200px;
-}
-
-h1 {
-  font-family: Graffiti-Regular;
-  font-size: 50px;
 }
 
 @media only screen and (min-width: 768px) {
