@@ -1,24 +1,21 @@
+<section class="scoreContainer">
+  <h1>Your Score: {{ score }}/10</h1>
+  <p><b>Here's the scoop</b>: {{ message }}</p>
+  <div class="gif" *ngIf="this.score < 4">
+    <img src="{{ giphyScaredData[index].images.fixed_width.url }}" />
+  </div>
 
-
-<div class="page">
-<h1>Your Score: {{ score }}/10</h1>
-<p>{{ message }}</p>
-<div class="gif" *ngIf="this.score < 4">
-<img src="{{giphyScaredData[index].images.fixed_width.url}}">
-</div>
-
-<div class="gif" *ngIf="this.score >= 4 && this.score <= 7">
-  <img src="{{giphyNormalData[index].images.fixed_width.url}}">
+  <div class="gif" *ngIf="this.score >= 4 && this.score <= 7">
+    <img src="{{ giphyNormalData[index].images.fixed_width.url }}" />
   </div>
 
   <div class="gif" *ngIf="this.score > 7">
-    <img src="{{giphyCrazyData[index].images.fixed_width.url}}">
-    </div>
-
-<div class="resultsButton">
-<button (click)="[handleHomeClick(), resetUserScore()]">Return Home</button>
-<button (click)="[handleQuizClick(), resetUserScore()]">
-  Take Another Quiz
-</button>
-</div>
+    <img src="{{ giphyCrazyData[index].images.fixed_width.url }}" />
+  </div>
+</section>
+<div class="buttonContainer">
+  <button (click)="[handleHomeClick(), resetUserScore()]">Return Home</button>
+  <button (click)="[handleQuizClick(), resetUserScore()]">
+    Take Another Quiz
+  </button>
 </div>

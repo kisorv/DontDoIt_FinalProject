@@ -1,56 +1,65 @@
-/* div{
-    display: flex;
-    flex-direction: column
-
-} */
-
-
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
 :host {
-    display: block;
-    height: 100%;
-    background-image: linear-gradient(to bottom right, #a42102, #fdc700);
-  }
-
-h1 {
-    color: white;
-    font-size: 5em;
-  }
-  
-  p {
-    color: white;
-    font-size: 5em;
-  }
-img {
-    width: 300px;
-    height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.gif {
-    border: 0.5px solid gray;
-    background-size: contain;
-    display: flex;
-    
-}
-
-.resultButtons {
-    text-align: center;
-    padding: 5px;
-  
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  width: 65%;
+  margin: 40px 0px;
+  padding: 40px;
 }
 
 button {
-  font-size: 50px;
-  padding: 20px 5px 5px 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: white;
+  padding: 20px;
   margin: 10px;
-  border-radius: 3%;
+  border-radius: 15px;
 }
 
+button:hover {
+  background-color: black;
+  color: #f7c800;
+  border-color: black;
+}
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
 
+img {
+  width: 300px;
+  height: 300px;
+}
 
+.gif {
+  border: 0.5px solid gray;
+  background-size: contain;
+  display: flex;
+}
+
+h1 {
+  font-family: Graffiti-Regular;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top:0;
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+}

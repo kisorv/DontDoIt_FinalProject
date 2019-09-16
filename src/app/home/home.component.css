@@ -1,16 +1,10 @@
-#opening {
+section {
     width: 100%;
     height: 500px;
     background-image: url("src/assets/caution.jpg");
     background-size: cover;
     position: relative;
     overflow: hidden;
-}
-
-:host {
-    /* display: block;
-    height: 400vh; */
-    background-image: linear-gradient(to bottom right, #a42102, #fdc700);
 }
 
 .overlay {
@@ -24,6 +18,7 @@
 
 div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -75,7 +70,6 @@ div {
     animation-name: flyIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    /* padding: 30px; */
 }
 
 @keyframes flyIn {
@@ -87,10 +81,26 @@ div {
     }
 }
 
+.description {
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+#appDescription {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.subHeading {
+    font-family: Graffiti-Regular;
+    font-size: 50px;
+}
+
 img {
     width: 200x;
     height: 200px;
-    /* padding: 15px 15px 10px 15px; */
 }
 
 main {
@@ -103,14 +113,13 @@ main {
 }
 
 .container {
-    border: 0.5px solid gray;
-    width: 350px;
-    height: 350px;
+    width: 425px;
+    height: 425px;
 }
 
 img {
-    width: 349px;
-    height: 349px;
+    width: 425px;
+    height: 425px;
 }
 
 div.container {
@@ -118,49 +127,20 @@ div.container {
     background-image: linear-gradient(to bottom right, #FFFFFF, #fdc700, #080302);
 }
 
-.quiz.container {
-    background-image: linear-gradient(to bottom right, #da7701, #a42102);
+.quiz.container, .topics.container {
+    background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
 }
 
-.topics.container {
-    background-image: linear-gradient(to bottom right, #da7701, #a42102);
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.quiz.container:hover {
-    box-shadow: 10px 10px 10px 10px;
-    animation-name: pulse;
-    animation-duration: 2s;
-}
-
-.topics.container:hover {
-    box-shadow: 10px 10px 10px 10px;
-    animation-name: pulse;
-    animation-duration: 2s;
-}
-
-@keyframes pulse {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.25, 1.25, 1.25);
-        transform: scale3d(1.25, 1.25, 1.25);
-    }
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-h3 {
-    text-align: center;
-    width: 200px;
-}
-
-h1 {
-    font-family: Graffiti-Regular;
-    font-size: 50px;
+footer {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    height: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -169,11 +149,31 @@ h1 {
         justify-content: center;
         flex-direction: row;
     }
-    .container {
-        margin-top: 200px;
-        margin-bottom: 150px;
-    }
     #title {
         font-size: 100px;
+    }
+    .quiz.container:hover {
+        box-shadow: 0px 0px 10px;
+        animation-name: pulse;
+        animation-duration: 2s;
+    }
+    .topics.container:hover {
+        box-shadow: 0px 0px 10px;
+        animation-name: pulse;
+        animation-duration: 2s;
+    }
+    @keyframes pulse {
+        from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(1.15, 1.15, 1.15);
+            transform: scale3d(1.15, 1.15, 1.15);
+        }
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
     }
 }

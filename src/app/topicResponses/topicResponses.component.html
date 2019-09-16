@@ -1,15 +1,13 @@
-<div class="topicsWrapper">
-  <div class="topicsBox">
-    <div class="topics">
-      <p><strong> Things Not To Do...</strong></p>
-      <ul *ngFor="let answer of answers">
-        <li>{{ answer.item }}</li>
-      </ul>
-    </div>
+<div class="topicsBox">
+  <div class="topics">
+    <p><strong> Things Not To Do...</strong></p>
+    <p *ngFor="let answer of answers">
+      <i class="fas fa-exclamation-triangle"></i>{{ answer.item }}
+    </p>
   </div>
-  <button (click)="[handleHomeClick()]">Return Home</button>
-  <button (click)="[handleTopicsClick()]">Get More Cents</button>
 </div>
 
-<!-- <button (click)="[handleHomeClick()]">Return Home</button>
-<button (click)="[handleTopicsClick()]">Get More Cents</button> -->
+<section class="buttonContainer">
+  <button (click)="[handleHomeClick()]">Return Home</button>
+  <button (click)="[handleTopicsClick()]">Get More Cents</button>
+</section>
