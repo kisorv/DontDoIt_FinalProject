@@ -107,8 +107,8 @@ main {
 
 .container {
   border: 0.5px solid gray;
-  width: 350px;
-  height: 350px;
+  width: 425px;
+  height: 425px;
 }
 
 img {
@@ -146,13 +146,13 @@ footer {
 }
 
 .quiz.container:hover {
-  box-shadow: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px;
   animation-name: pulse;
   animation-duration: 2s;
 }
 
 .topics.container:hover {
-  box-shadow: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px;
   animation-name: pulse;
   animation-duration: 2s;
 }
