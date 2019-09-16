@@ -1,47 +1,64 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  border-radius: 15px;
+  width: 50%;
+}
+
 /* div{
     display: flex;
     flex-direction: column
 
 } */
 
-
-.page {
+/* .page {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-}
-:host {
+} */
+/* :host {
     display: block;
     height: 100%;
     background-image: linear-gradient(to bottom right, #a42102, #fdc700);
-  }
+  } */
 
 h1 {
-    color: white;
-    font-size: 5em;
-  }
-  
-  p {
-    color: white;
-    font-size: 5em;
-  }
+  color: white;
+  font-size: 5em;
+}
+
+p {
+  color: white;
+  font-size: 5em;
+}
+
 img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .gif {
-    border: 0.5px solid gray;
-    background-size: contain;
-    display: flex;
-    
+  border: 0.5px solid gray;
+  background-size: contain;
+  display: flex;
 }
 
 .resultButtons {
-    text-align: center;
-    padding: 5px;
-  
+  text-align: center;
+  padding: 5px;
 }
 
 button {
@@ -51,6 +68,13 @@ button {
   border-radius: 3%;
 }
 
+.btn {
+  border: 5px solid white;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
 
-
-
+button {
+  margin-top: 20px;
+}

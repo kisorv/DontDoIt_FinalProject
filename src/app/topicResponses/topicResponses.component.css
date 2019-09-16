@@ -25,3 +25,8 @@ div.topics {
   font-size: 25px;
   padding: 40px 40px 40px 40px;
 }
+
+i {
+  color: #f7c800;
+  margin-right: 10px;
+}

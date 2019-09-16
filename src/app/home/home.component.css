@@ -24,6 +24,7 @@ section {
 
 div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -79,7 +80,6 @@ div {
   animation-name: flyIn;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  /* padding: 30px; */
 }
 
 @keyframes flyIn {
@@ -94,7 +94,6 @@ div {
 img {
   width: 200x;
   height: 200px;
-  /* padding: 15px 15px 10px 15px; */
 }
 
 main {
@@ -110,11 +109,11 @@ main {
   border: 0.5px solid gray;
   width: 350px;
   height: 350px;
-  }
+}
 
 img {
-  width: 349px;
-  height: 349px;
+  width: 424px;
+  height: 424px;
 }
 
 div.container {
@@ -123,6 +122,23 @@ div.container {
 
 .quiz.container {
   background-image: linear-gradient(to bottom right, #da7701, #a42102);
+}
+
+h1 {
+  font-family: Graffiti-Regular;
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  bottom: 0;
+  height: 40px;
 }
 
 .topics.container {
@@ -174,10 +190,7 @@ h1 {
     justify-content: center;
     flex-direction: row;
   }
-  .container {
-    margin-top: 200px;
-    margin-bottom: 150px;
-  }
+
   #title {
     font-size: 100px;
   }
