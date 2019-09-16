@@ -74,7 +74,7 @@ div {
 }
 
 .nav::before {
-  top: 0;
+  top: 28px;
   transform-origin: center right;
 }
 
@@ -84,7 +84,7 @@ div {
 }
 
 .nav::after {
-  bottom: 0;
+  bottom: 28px;
   transform-origin: center left;
 }
 
