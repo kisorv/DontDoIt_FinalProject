@@ -1,8 +1,11 @@
 :host {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
-  justify-content: center;
-  background-image: linear-gradient(to bottom right, #da7701, #a42102);
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .topicsWrapper {
@@ -12,6 +15,7 @@
 }
 
 .topicsBox {
+  margin: 40px 0px;
   background-color: white;
   -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
@@ -23,10 +27,32 @@
 div.topics {
   font-weight: bold;
   font-size: 25px;
-  padding: 40px 40px 40px 40px;
+  padding: 0px 40px;
+  margin: 0;
 }
 
 i {
   color: #f7c800;
   margin-right: 10px;
+}
+
+button {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: black;
+  color: #f7c800;
+  border-color: black;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
 }

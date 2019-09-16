@@ -10,9 +10,12 @@ export class DontdoitService {
   userScore: number = 0;
   questions: any;
 
-  riskyMessage = "You live by the mantra: YOLO!";
-  normalMessage = "You like to play it safe but you're not lame.";
-  timidMessage = "You take life too seriously.";
+  riskyMessage =
+    "You have no respect for rules! You are next level crazy. You're a loose cannon and you live by the mantra: YOLO! ";
+  normalMessage =
+    "Go on an adventure. Conquer your fears. Take life's ups and downs. You know how to play it safe but you're still cool!";
+  timidMessage =
+    "Do you find yourself missing out on all the the fun? No stories to tell your grand kids? That's because you take life too seriously!";
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -65,34 +68,38 @@ export class DontdoitService {
   }
 
   getGiphyData(): Observable<any> {
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`)
-
+    return this.http.get(
+      `https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`
+    );
   }
 
   getStickerData(): Observable<any> {
-    return this.http.get(`https://api.giphy.com/v1/stickers/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`)
-
+    return this.http.get(
+      `https://api.giphy.com/v1/stickers/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`
+    );
   }
 
   getGiphyScaredData(): Observable<any> {
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=lame&limit=500&offset=0&rating=G&lang=en`)
-
+    return this.http.get(
+      `https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=nervous&limit=500&offset=0&rating=G&lang=en`
+    );
   }
 
   getGiphyNormalData(): Observable<any> {
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=cool&limit=500&offset=0&rating=G&lang=en`)
-
+    return this.http.get(
+      `https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=cool&limit=500&offset=0&rating=G&lang=en`
+    );
   }
 
   getGiphyCrazyData(): Observable<any> {
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=crazy&limit=500&offset=0&rating=G&lang=en`)
-
+    return this.http.get(
+      `https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=crazy&limit=500&offset=0&rating=G&lang=en`
+    );
   }
 
   getTextData(): Observable<any> {
-    return this.http.get(`https://api.giphy.com/v1/text/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`)
-
+    return this.http.get(
+      `https://api.giphy.com/v1/text/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`
+    );
   }
-
-
 }

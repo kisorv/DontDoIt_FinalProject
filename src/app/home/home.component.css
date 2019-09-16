@@ -7,12 +7,6 @@ section {
   overflow: hidden;
 }
 
-:host {
-  /* display: block;
-    height: 400vh; */
-  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -123,14 +117,13 @@ main {
 }
 
 .container {
-  border: 0.5px solid gray;
   width: 425px;
   height: 425px;
 }
 
 img {
-  width: 424px;
-  height: 424px;
+  width: 425px;
+  height: 425px;
 }
 
 div.container {
@@ -155,13 +148,13 @@ footer {
 }
 
 .quiz.container:hover {
-  box-shadow: 6px 6px 6px 6px;
+  box-shadow: 0px 0px 10px;
   animation-name: pulse;
   animation-duration: 2s;
 }
 
 .topics.container:hover {
-  box-shadow: 6px 6px 6px 6px;
+  box-shadow: 0px 0px 10px;
   animation-name: pulse;
   animation-duration: 2s;
 }

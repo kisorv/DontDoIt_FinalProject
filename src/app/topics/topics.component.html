@@ -1,25 +1,22 @@
+<h1 class="heading">Two Cents</h1>
+<h3 class="subHeading">5 Things You Should Never Do At...</h3>
 
-<div class="page">
-<h3>What NOT To Do!</h3>
-<p>Choose a topic...</p>
-<div class="gif">
-        
+<!-- <div class="gif">        
 <img src="{{textData[index].images.fixed_width.url}}">
-</div>
+</div> -->
 
-<div>
-  <div class="buttonWrapper">
-  <button>
-    <a routerLinkActive="active" routerLink="/topics/wedding">Weddings</a>
-  </button>
-  <button>
-    <a routerLinkActive="active" routerLink="/topics/interviews">Interviews</a>
-  </button>
-  <button>
-    <a routerLinkActive="active" routerLink="/topics/firstdate">First Dates</a>
-  </button>
-  </div>
-</div>
+<div class="buttonWrapper">
+  <a routerLinkActive="active" routerLink="/topics/wedding"
+    ><button>WEDDINGS</button></a
+  >
+
+  <a routerLinkActive="active" routerLink="/topics/interviews"
+    ><button>INTERVIEWS</button></a
+  >
+
+  <a routerLinkActive="active" routerLink="/topics/firstdate"
+    ><button>FIRST DATES</button></a
+  >
 </div>
 
 <router-outlet></router-outlet>
