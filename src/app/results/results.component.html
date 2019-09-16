@@ -1,13 +1,24 @@
 
 
-<div class="gif">
-<h1>{{ score }}/10</h1>
+<div class="page">
+<h1>Your Score: {{ score }}/10</h1>
 <p>{{ message }}</p>
-<img src="{{giphyResultsData[index].images.fixed_width.url}}">
+<div class="gif" *ngIf="this.score < 4">
+<img src="{{giphyScaredData[index].images.fixed_width.url}}">
 </div>
 
+<div class="gif" *ngIf="this.score >= 4 && this.score <= 7">
+  <img src="{{giphyNormalData[index].images.fixed_width.url}}">
+  </div>
 
+  <div class="gif" *ngIf="this.score > 7">
+    <img src="{{giphyCrazyData[index].images.fixed_width.url}}">
+    </div>
+
+<div class="resultsButton">
 <button (click)="[handleHomeClick(), resetUserScore()]">Return Home</button>
 <button (click)="[handleQuizClick(), resetUserScore()]">
   Take Another Quiz
 </button>
+</div>
+</div>

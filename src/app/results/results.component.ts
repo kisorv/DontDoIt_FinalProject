@@ -12,7 +12,9 @@ export class ResultsComponent implements OnInit {
   loop: number = 1;
   index: number = Math.floor((Math.random() * 500));
   delay: number = 10000;
-  giphyResultsData: any;
+  giphyScaredData: any;
+  giphyNormalData: any;
+  giphyCrazyData: any;
 
   constructor(private dontdoitService: DontdoitService) {}
 
@@ -35,20 +37,49 @@ export class ResultsComponent implements OnInit {
     this.score = this.dontdoitService.returnScore();
     this.message = this.dontdoitService.scoreResponse();
     console.log(this.message);
-    if (this.loop === 1) {
+    if (this.loop === 1 && this.score < 4) {
       // setTimeout(this.indexFlow, this.delay);
       setInterval(this.indexFlow.bind(this), 10000);
    
-      this.dontdoitService.getGiphyResultsData().subscribe(response => {
+      this.dontdoitService.getGiphyScaredData().subscribe(response => {
         console.log(response.data);
         
-        this.giphyResultsData = response.data;
+        this.giphyScaredData = response.data;
         
-        console.log(this.giphyResultsData);
+        console.log(this.giphyScaredData);
       });
+  }
+  else {
+    if (this.loop === 1 && this.score >= 4 && this.score <= 7) {
+      // setTimeout(this.indexFlow, this.delay);
+      setInterval(this.indexFlow.bind(this), 10000);
+   
+      this.dontdoitService.getGiphyNormalData().subscribe(response => {
+        console.log(response.data);
+        
+        this.giphyNormalData = response.data;
+        
+        console.log(this.giphyNormalData);
+      });
+  }
+  
+  else {
+    if (this.loop === 1 && this.score > 7) {
+      // setTimeout(this.indexFlow, this.delay);
+      setInterval(this.indexFlow.bind(this), 10000);
+   
+      this.dontdoitService.getGiphyCrazyData().subscribe(response => {
+        console.log(response.data);
+        
+        this.giphyCrazyData = response.data;
+        
+        console.log(this.giphyCrazyData);
+      });
+  }
   }
 
   }
+}
 
   handleHomeClick() {
     this.dontdoitService.navigateToHome();
