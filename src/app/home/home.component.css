@@ -110,7 +110,7 @@ main {
   border: 0.5px solid gray;
   width: 350px;
   height: 350px;
-}
+  }
 
 img {
   width: 349px;
@@ -130,13 +130,15 @@ div.container {
 }
 
 .quiz.container:hover {
+  box-shadow: 10px 10px 10px 10px;
   animation-name: pulse;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .topics.container:hover {
+  box-shadow: 10px 10px 10px 10px;
   animation-name: pulse;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 @keyframes pulse {
@@ -146,8 +148,8 @@ div.container {
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
   }
 
   to {

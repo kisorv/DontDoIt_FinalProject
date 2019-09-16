@@ -60,6 +60,10 @@ export class DontdoitService {
     this.router.navigate(["quiz"]);
   }
 
+  navigateToTopics() {
+    this.router.navigate(["topics"]);
+  }
+
   getGiphyData(): Observable<any> {
     return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=MAr6aY1f8bR1DAuAtoBGEGjRZ9pZxMcJ&q=no&limit=500&offset=0&rating=G&lang=en`)
 
