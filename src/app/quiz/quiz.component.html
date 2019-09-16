@@ -1,29 +1,26 @@
+<h1 class="heading">How Risky Are You?</h1>
+<h3 class="subHeading">Choose a quiz...</h3>
 
+<div class="quizButtons">
+  <a routerLinkActive="active" routerLink="/quiz/dinner"
+    ><button>DINNER WITH YOUR BOSS</button></a
+  >
 
-<div class="page">
-<h1>How Much Do You Love Life?</h1>
+  <a routerLinkActive="active" routerLink="/quiz/phone"
+    ><button>4G OR NO 4G?</button></a
+  >
 
+  <a routerLinkActive="active" routerLink="/quiz/Riskybiz"
+    ><button>RISKY BUSINESS</button></a
+  >
 
-<h3>TAKE A QUIZ!</h3>
+  <a routerLinkActive="active" routerLink="/quiz/drivers"
+    ><button>ROAD TEST</button></a
+  >
+</div>
+
+<router-outlet></router-outlet>
 
 <!-- <div class="gif">
 <img src="{{stickerData[index].images.fixed_width.url}}">
 </div> -->
-
-<div class="quizButtons">
-    <button>
-        <a routerLinkActive="active" routerLink="/quiz/dinner">Dinner</a>
-    </button>
-    <button>
-        <a routerLinkActive="active" routerLink="/quiz/phone">4G or No 4G?</a>
-    </button>
-    <button>
-        <a routerLinkActive="active" routerLink="/quiz/Riskybiz">Risky Business</a>
-    </button>
-    <button>
-        <a routerLinkActive="active" routerLink="/quiz/drivers">Drivers</a>
-    </button>
-</div>
-</div>
-
-<router-outlet></router-outlet>
