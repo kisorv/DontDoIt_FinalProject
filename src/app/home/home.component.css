@@ -7,6 +7,12 @@ section {
   overflow: hidden;
 }
 
+:host {
+  /* display: block;
+    height: 400vh; */
+  background-image: linear-gradient(to bottom right, #a42102, #fdc700);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -29,17 +35,64 @@ div {
   font-size: 75px;
   font-family: Graffiti-Shadow;
   margin: 0;
+  animation-name: flipInX;
+  animation-duration: 3s;
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
 }
 
 #tagline {
   color: white;
   font-size: 25px;
   margin: 0;
+  position: relative;
+  animation-name: flyIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes flyIn {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
 
 img {
-  width: 200px;
+  width: 200x;
   height: 200px;
 }
 
@@ -54,8 +107,8 @@ main {
 
 .container {
   border: 0.5px solid gray;
-  width: 425px;
-  height: 425px;
+  width: 350px;
+  height: 350px;
 }
 
 img {
@@ -67,9 +120,8 @@ div.container {
   flex-direction: column;
 }
 
-h3 {
-  text-align: center;
-  width: 200px;
+.quiz.container {
+  background-image: linear-gradient(to bottom right, #da7701, #a42102);
 }
 
 h1 {
@@ -87,6 +139,49 @@ footer {
   color: white;
   bottom: 0;
   height: 40px;
+}
+
+.topics.container {
+  background-image: linear-gradient(to bottom right, #da7701, #a42102);
+}
+
+.quiz.container:hover {
+  box-shadow: 10px 10px 10px 10px;
+  animation-name: pulse;
+  animation-duration: 2s;
+}
+
+.topics.container:hover {
+  box-shadow: 10px 10px 10px 10px;
+  animation-name: pulse;
+  animation-duration: 2s;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+h3 {
+  text-align: center;
+  width: 200px;
+}
+
+h1 {
+  font-family: Graffiti-Regular;
+  font-size: 50px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -6,11 +6,6 @@ body {
   margin: 0;
 }
 @font-face {
-  font-family: "Tajawal";
-  src: url("/assets/fonts/Tajawal-Light.ttf");
-}
-
-@font-face {
   font-family: "Graffiti-Regular";
   src: url("/assets/fonts/SpriteGraffiti-Regular.ttf");
 }
@@ -18,4 +13,9 @@ body {
 @font-face {
   font-family: "Graffiti-Shadow";
   src: url("/assets/fonts/SpriteGraffiti-Shadow.ttf");
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("/assets/fonts/Tajawal-Light.ttf");
 }

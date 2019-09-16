@@ -1,32 +1,49 @@
 :host {
   display: block;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to bottom right, #a42102, #fdc700);
 }
-a {
-    text-decoration: none;
-    color: black;
+
+h3 {
+  color: white;
+  font-size: 5em;
 }
 
+p {
+  color: white;
+  font-size: 5em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .gif {
-    border: 0.5px solid gray;
-    background-size: contain;
-    display: flex;
-    
+  border: 0.5px solid gray;
+  background-size: contain;
+  display: flex;
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+img {
+  width: 250px;
+  height: 250px;
+  /* padding: 15px 15px 10px 15px; */
+}
 
-img{
-    width: 200px;
-    height: 200px;
-    /* padding: 15px 15px 10px 15px; */
-  }
+.buttonWrapper {
+  text-align: center;
+  padding: 5px;
+}
 
+button {
+  font-size: 50px;
+  padding: 20px 5px 5px 10px;
+  margin: 10px;
+  border-radius: 3%;
+}
