@@ -25,11 +25,14 @@ form {
 
 .questions {
   font-size: 25px;
-  padding: 25px;
+  margin: 0;
 }
 
 .answers {
   padding-left: 30px;
+}
+ol {
+  padding: 0px 40px;
 }
 
 /* div.answers:hover {
@@ -89,5 +92,5 @@ button:hover {
 p {
   font-weight: 1000;
 }
- 
-}
+
+

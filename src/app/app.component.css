@@ -10,7 +10,7 @@ h1 {
     font-size: 22px;
 }
 
-div {
+.navBar {
   display: flex;
   align-items: center;
 }
