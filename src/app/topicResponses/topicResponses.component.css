@@ -32,8 +32,25 @@ div.topics {
 }
 
 i {
-    color: #f7c800;
-    margin-right: 10px;
+
+  color: #f7c800;
+  margin-right: 10px;
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 button {

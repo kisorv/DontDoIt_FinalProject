@@ -11,12 +11,40 @@ h1 {
 }
 
 div {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
-    font-size: 20px;
-    position: relative;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav::before,
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.nav::before {
+  top: 0;
+  transform-origin: center right;
+}
+
+.nav:hover::before,
+.nav:hover::after {
+  transform: scaleX(1);
+}
+
+.nav::after {
+  bottom: 0px;
+  transform-origin: center left;
 }
 
 a {

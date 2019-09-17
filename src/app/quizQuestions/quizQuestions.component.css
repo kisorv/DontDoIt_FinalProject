@@ -22,13 +22,38 @@ form {
     width: 85%;
 }
 
-div.questions {
-    padding: 10px;
+
+.questions {
+  font-size: 25px;
+  padding: 25px;
 }
 
-p {
-    font-weight: 1000;
+.answers {
+  padding-left: 30px;
 }
+
+/* div.answers:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+} */
+
 
 button {
     color: white;
@@ -52,6 +77,7 @@ button:hover {
     padding: 25px;
 }
 
+
 @media only screen and (min-width: 768px) {
     button {
         padding: 20px;
@@ -59,4 +85,9 @@ button:hover {
     form {
         width: 65%;
     }
+
+p {
+  font-weight: 1000;
+}
+ 
 }

@@ -21,13 +21,11 @@ export class TopicsComponent implements OnInit {
       console.log(this.index);
     } else {
       this.index++;
-      console.log(this.index);
     }
   }
 
   ngOnInit() {
     if (this.loop === 1) {
-      // setTimeout(this.indexFlow, this.delay);
       setInterval(this.indexFlow.bind(this), 10000);
 
       this.dontDoitService.getTextData().subscribe(response => {
