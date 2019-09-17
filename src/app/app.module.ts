@@ -11,34 +11,38 @@ import { QuizComponent } from "./quiz/quiz.component";
 import { QuizQuestionsComponent } from "./quizQuestions/quizQuestions.component";
 import { FormsModule } from "@angular/forms";
 import { ResultsComponent } from "./results/results.component";
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
-  { path: "home", component: HomeComponent },
-  { path: "topics/:category", component: TopicResponsesComponent },
-  { path: "topics", component: TopicsComponent },
-  { path: "quiz", component: QuizComponent },
-  { path: "quiz/:category", component: QuizQuestionsComponent },
-  { path: "results", component: ResultsComponent },
-  { path: "", redirectTo: "/home", pathMatch: "full" }
+    { path: "home", component: HomeComponent },
+    { path: "topics/:category", component: TopicResponsesComponent },
+    { path: "topics", component: TopicsComponent },
+    { path: "quiz", component: QuizComponent },
+    { path: "quiz/:category", component: QuizQuestionsComponent },
+    { path: "results", component: ResultsComponent },
+    { path: "about", component: AboutComponent },
+    { path: "", redirectTo: "/home", pathMatch: "full" }
+
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopicResponsesComponent,
-    TopicsComponent,
-    HomeComponent,
-    QuizComponent,
-    QuizQuestionsComponent,
-    ResultsComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot(appRoutes),
-    FormsModule
-  ],
-  providers: [DontdoitService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        TopicResponsesComponent,
+        TopicsComponent,
+        HomeComponent,
+        QuizComponent,
+        QuizQuestionsComponent,
+        ResultsComponent,
+        AboutComponent
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        RouterModule.forRoot(appRoutes),
+        FormsModule
+    ],
+    providers: [DontdoitService],
+    bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
