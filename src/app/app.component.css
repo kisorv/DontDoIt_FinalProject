@@ -54,6 +54,7 @@ h1:hover {
 
 div {
   display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -74,23 +75,18 @@ div {
 }
 
 .nav::before {
-  top: 28px;
+  top: 0;
   transform-origin: center right;
 }
 
-.nav:hover::before {
-  transform-origin: center left;
+.nav:hover::before,
+.nav:hover::after {
   transform: scaleX(1);
 }
 
 .nav::after {
-  bottom: 28px;
+  bottom: 0px;
   transform-origin: center left;
-}
-
-.nav:hover::after {
-  transform-origin: center right;
-  transform: scaleX(1);
 }
 
 a {
