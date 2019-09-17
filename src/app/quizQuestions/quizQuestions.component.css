@@ -1,27 +1,26 @@
 :host {
-    display: block;
-    height: 100%;
-    background-image: url("src/assets/caution.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .formWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
 }
 
 form {
-    background-color: white;
-    -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 20px;
-    width: 85%;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  width: 85%;
 }
-
 
 .questions {
   font-size: 25px;
@@ -57,40 +56,37 @@ ol {
   }
 } */
 
-
 button {
-    color: white;
-    font-size: 16px;
-    font-weight: 800;
-    background-color: black;
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: black;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 button:hover {
-    background-color: transparent;
-    color: black;
-    border-color: black;
+  background-color: transparent;
+  color: black;
+  border-color: black;
 }
 
 .buttonWrapper {
-    text-align: center;
-    padding: 25px;
+  text-align: center;
+  padding: 25px;
 }
-
 
 @media only screen and (min-width: 768px) {
-    button {
-        padding: 20px;
-    }
-    form {
-        width: 65%;
-    }
+  button {
+    padding: 20px;
+  }
+  form {
+    width: 65%;
+  }
 
-p {
-  font-weight: 1000;
+  p {
+    font-weight: 1000;
+  }
 }
-
-
