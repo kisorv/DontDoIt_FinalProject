@@ -1,14 +1,14 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  background-image: url("src/assets/caution.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("src/assets/caution.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/*Sentence*/
+
 .sentence {
   color: #222;
   font-size: 30px;
@@ -16,7 +16,6 @@
   margin-left: 20%;
 }
 
-/*Wrapper*/
 .wrapper {
   display: flex;
   align-items: center;
@@ -33,7 +32,6 @@
   box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
 }
 
-/*Vertical Sliding*/
 .slidingVertical {
   display: inline;
   text-indent: 8px;
@@ -68,7 +66,6 @@
   -webkit-animation-delay: 10s;
 }
 
-/*topToBottom Animation*/
 @keyframes topToBottom {
   0% {
     opacity: 0;
@@ -95,9 +92,11 @@
   100% {
     opacity: 0;
   }
+
 }
 
 i {
+
   color: #f7c800;
   margin-right: 10px;
   animation-name: flash;
@@ -116,25 +115,51 @@ i {
   75% {
     opacity: 0;
   }
+
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 button {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  background-color: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-}
-
-button:hover {
-  background-color: black;
-  color: #f7c800;
-  border-color: black;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
 }
 
 .buttonContainer {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    button {
+        padding: 20px;
+        margin: 10px;
+    }
+    button:hover {
+        background-color: black;
+        color: #f7c800;
+        border-color: black;
+    }
 }

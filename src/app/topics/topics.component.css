@@ -1,10 +1,11 @@
 :host {
-  display: block;
-  height: 100vh;
-  background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
+    display: block;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
 }
 
 .heading {
+
   font-family: Graffiti-Shadow;
   font-size: 50px;
   text-align: center;
@@ -40,43 +41,102 @@
 }
 
 .subHeading {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px 0px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0px;
 }
-
-/* .gif {
-  border: 0.5px solid gray;
-  background-size: contain;
-  display: flex;
-} */
 
 img {
-  width: 250px;
-  height: 250px;
-  /* padding: 15px 15px 10px 15px; */
-}
+
+  width: 50px;
+  height: 50px;
+ }
 
 .buttonWrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
 }
 
 button {
-  color: white;
-  font-size: 25px;
-  font-weight: 700;
-  background-color: black;
-  width: 30%;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: black;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
+
+.twoCents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: baseline;
+}
 button:hover {
-  background-color: transparent;
-  color: black;
-  border-color: black;
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+
+@media only screen and (min-width: 768px) {
+    button {
+        width: 30%;
+    }
+
+#slidecaption {
+      background-size: cover;
+     -webkit-animation-name: spinner; 
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-duration: 2s; 
+    animation-name: spinner; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+    animation-duration: 2s; 
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+    border-style: none;
+    
+}
+
+img {
+  border-style: none;
+  outline: none;
+
+
+}
+
+  @-webkit-keyframes spinner { 
+    from 
+    { 
+        -webkit-transform: rotateY(0deg); 
+        border-style: none;
+    } 
+    to { 
+        -webkit-transform: rotateY(-360deg); 
+        border-style: none;
+    } 
+}  
+@keyframes spinner { 
+    from { 
+        -moz-transform: rotateY(0deg); 
+        -ms-transform: rotateY(0deg); 
+        transform: rotateY(0deg); 
+        border-style: none;
+    } 
+    to 
+    { 
+        -moz-transform: rotateY(-360deg); 
+        -ms-transform: rotateY(-360deg); 
+        transform: rotateY(-360deg); 
+        border-style: none;
+    } 
 }
