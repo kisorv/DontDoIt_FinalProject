@@ -22,10 +22,13 @@ form {
   width: 65%;
 }
 
-div.questions {
-  font-weight: bold;
+.questions {
   font-size: 25px;
-  padding: 40px 5px 5px 40px;
+  padding: 25px;
+}
+
+.answers {
+  padding-left: 30px;
 }
 
 /* div.answers:hover {
@@ -71,6 +74,10 @@ button:hover {
 .buttonWrapper {
   text-align: center;
   padding: 25px;
+}
+
+p {
+  font-weight: 1000;
 }
 
 
