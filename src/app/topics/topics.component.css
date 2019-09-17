@@ -5,41 +5,36 @@
 }
 
 .heading {
-
-  font-family: Graffiti-Shadow;
-  font-size: 50px;
-  text-align: center;
-  margin: 0;
-  animation-name: jackInTheBox;
-  animation-duration: 2s;
-  margin-top: 10px;
+    font-family: Graffiti-Shadow;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    animation-name: jackInTheBox;
+    animation-duration: 2s;
+    margin-top: 10px;
 }
 
 @keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1.0;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    to {
+        opacity: 1.0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 .subHeading {
@@ -55,12 +50,11 @@
 } */
 
 img {
-
-  width: 50px;
-  height: 50px;
-  /* padding: 15px 15px 10px 15px; */
-  border-style: none;
-  margin: 10px;
+    width: 50px;
+    height: 50px;
+    /* padding: 15px 15px 10px 15px; */
+    border-style: none;
+    margin: 10px;
 }
 
 .buttonWrapper {
@@ -81,75 +75,67 @@ button {
     border-radius: 15px;
 }
 
-
 .twoCents {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: baseline;
 }
+
 button:hover {
     background-color: transparent;
     color: black;
     border-color: black;
 }
 
-
 @media only screen and (min-width: 768px) {
     button {
         width: 30%;
     }
-
-#slidecaption {
-      background-size: cover;
-     -webkit-animation-name: spinner; 
-    -webkit-animation-timing-function: linear; 
-    -webkit-animation-iteration-count: infinite; 
-    -webkit-animation-duration: 2s; 
-    animation-name: spinner; 
-    animation-timing-function: linear; 
-    animation-iteration-count: infinite; 
-    animation-duration: 2s; 
-    -webkit-transform-style: preserve-3d; 
-    -moz-transform-style: preserve-3d; 
-    -ms-transform-style: preserve-3d; 
-    transform-style: preserve-3d;
-    border-style: none;
-    
-}
-
-img {
-  border-style: none;
-  outline: none;
-
-
-}
-
-  /* WebKit and Opera browsers */ @-webkit-keyframes spinner { 
-    from 
-    { 
-        -webkit-transform: rotateY(0deg); 
+    #slidecaption {
+        background-size: cover;
+        -webkit-animation-name: spinner;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 2s;
+        animation-name: spinner;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
         border-style: none;
-    } 
-    to { 
-        -webkit-transform: rotateY(-360deg); 
+    }
+    img {
         border-style: none;
-    } 
-} /* all other browsers */ 
-@keyframes spinner { 
-    from { 
-        -moz-transform: rotateY(0deg); 
-        -ms-transform: rotateY(0deg); 
-        transform: rotateY(0deg); 
-        border-style: none;
-    } 
-    to 
-    { 
-        -moz-transform: rotateY(-360deg); 
-        -ms-transform: rotateY(-360deg); 
-        transform: rotateY(-360deg); 
-        border-style: none;
-    
-    } 
-
+        outline: none;
+    }
+    /* WebKit and Opera browsers */
+    @-webkit-keyframes spinner {
+        from {
+            -webkit-transform: rotateY(0deg);
+            border-style: none;
+        }
+        to {
+            -webkit-transform: rotateY(-360deg);
+            border-style: none;
+        }
+    }
+    /* all other browsers */
+    @keyframes spinner {
+        from {
+            -moz-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            border-style: none;
+        }
+        to {
+            -moz-transform: rotateY(-360deg);
+            -ms-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+            border-style: none;
+        }
+    }
 }
