@@ -140,12 +140,12 @@ a {
   color: black;
 }
 
-footer {
+/* footer {
   background-color: black;
   color: white;
   bottom: 0;
-  height: 40px;
-}
+  height: 90px;
+} */
 
 .quiz.container:hover {
   box-shadow: 0px 0px 10px;
@@ -175,6 +175,9 @@ footer {
     transform: scale3d(1, 1, 1);
   }
 }
+
+
+
 
 @media only screen and (min-width: 768px) {
   main {
