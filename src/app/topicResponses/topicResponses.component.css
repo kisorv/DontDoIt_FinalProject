@@ -1,37 +1,38 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  background-image: url("src/assets/caution.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("src/assets/caution.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .topicsWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topicsBox {
-  margin: 40px 0px;
-  background-color: white;
-  -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 20px;
-  width: 65%;
+    margin: 40px 0px;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    width: 65%;
 }
 
 div.topics {
-  font-weight: bold;
-  font-size: 25px;
-  padding: 0px 40px;
-  margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 40px;
+    margin: 0;
 }
 
 i {
+
   color: #f7c800;
   margin-right: 10px;
   animation-name: flash;
@@ -53,22 +54,34 @@ i {
 }
 
 button {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  background-color: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-}
-
-button:hover {
-  background-color: black;
-  color: #f7c800;
-  border-color: black;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
 }
 
 .buttonContainer {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    button {
+        padding: 20px;
+        margin: 10px;
+    }
+    button:hover {
+        background-color: black;
+        color: #f7c800;
+        border-color: black;
+    }
 }

@@ -1,7 +1,7 @@
 :host {
-  background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
-  display: block;
-  height: 100vh;
+    background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
+    display: block;
+    height: 100vh;
 }
 
 .heading {
@@ -119,9 +119,9 @@ to
 }
 
 .subHeading {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px 0px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0px;
 }
 
 /* .gif {
@@ -132,27 +132,27 @@ to
 } */
 
 .quizButtons {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
 }
 
 button {
-  color: white;
-  font-size: 25px;
-  font-weight: 700;
-  background-color: black;
-  width: 30%;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: black;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 button:hover {
-  background-color: transparent;
-  color: black;
-  border-color: black;
+    background-color: transparent;
+    color: black;
+    border-color: black;
 }
 
 /* img {
@@ -161,14 +161,14 @@ button:hover {
 } */
 
 @media only screen and (min-width: 768px) {
-  button {
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    background-color: black;
-    width: 30%;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
-  }
+    button {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        background-color: black;
+        width: 30%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 15px;
+    }
 }

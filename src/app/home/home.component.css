@@ -1,189 +1,197 @@
 section {
-  width: 100%;
-  height: 500px;
-  background-image: url("src/assets/caution.jpg");
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background-image: url("src/assets/caution.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #title {
-  color: white;
-  font-size: 75px;
-  font-family: Graffiti-Shadow;
-  margin: 0;
-  animation-name: flipInX;
-  animation-duration: 3s;
+    color: white;
+    font-size: 65px;
+    font-family: Graffiti-Shadow;
+    margin: 0;
+    animation-name: flipInX;
+    animation-duration: 3s;
 }
 
 @keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
 }
 
 #tagline {
-  color: white;
-  font-size: 25px;
-  margin: 0;
-  position: relative;
-  animation-name: flyIn;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    animation-name: flyIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes flyIn {
-  0% {
-    left: -1000px;
-  }
-  100% {
-    left: 0;
-  }
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+#welcome {
+    height: 200px;
 }
 
 .description {
-  font-size: 20px;
-  text-align: center;
-  width: 200px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
 }
 
 #appDescription {
-  font-size: 30px;
-  text-align: center;
-  margin: 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    width: 200px;
 }
 
 .subHeading {
-  font-family: Graffiti-Regular;
-  font-size: 50px;
+    font-family: Graffiti-Regular;
+    font-size: 30px;
 }
 
 img {
-  width: 200x;
-  height: 200px;
+    width: 200x;
+    height: 200px;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .container {
-  width: 425px;
-  height: 425px;
+    width: 425px;
+    height: 200px;
 }
 
 img {
-  width: 425px;
-  height: 425px;
+    width: 425px;
+    height: 425px;
 }
 
 div.container {
-  flex-direction: column;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #FFFFFF, #fdc700, #080302);
 }
 
-.quiz.container,
-.topics.container {
-  background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
+.quiz.container, .topics.container {
+    background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 footer {
-  background-color: black;
-  color: white;
-  bottom: 0;
-  height: 40px;
-}
-
-.quiz.container:hover {
-  box-shadow: 0px 0px 10px;
-  animation-name: pulse;
-  animation-duration: 2s;
-}
-
-.topics.container:hover {
-  box-shadow: 0px 0px 10px;
-  animation-name: pulse;
-  animation-duration: 2s;
-}
-
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 1.15, 1.15);
-    transform: scale3d(1.15, 1.15, 1.15);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+    background-color: black;
+    color: white;
+    bottom: 0;
+    height: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  main {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  #title {
-    font-size: 100px;
-  }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #title {
+        font-size: 100px;
+    }
+    #tagline {
+        font-size: 25px;
+    }
+    .subHeading {
+        font-size: 50px;
+    }
+    .description {
+        font-size: 20px;
+    }
+    #appDescription {
+        font-size: 30px;
+        width: 500px;
+    }
+    .quiz.container:hover {
+        box-shadow: 0px 0px 10px;
+        animation-name: pulse;
+        animation-duration: 2s;
+    }
+    .topics.container:hover {
+        box-shadow: 0px 0px 10px;
+        animation-name: pulse;
+        animation-duration: 2s;
+    }
+    @keyframes pulse {
+        from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(1.15, 1.15, 1.15);
+            transform: scale3d(1.15, 1.15, 1.15);
+        }
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
 }
