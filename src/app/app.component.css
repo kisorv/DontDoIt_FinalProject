@@ -52,7 +52,7 @@ h1:hover {
   }
 }
 
-div {
+.navBar {
   display: flex;
   align-items: center;
 }
