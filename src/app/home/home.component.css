@@ -26,7 +26,7 @@ div {
 
 #title {
     color: white;
-    font-size: 75px;
+    font-size: 65px;
     font-family: Graffiti-Shadow;
     margin: 0;
     animation-name: flipInX;
@@ -64,7 +64,7 @@ div {
 
 #tagline {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     position: relative;
     animation-name: flyIn;
@@ -81,21 +81,26 @@ div {
     }
 }
 
+#welcome {
+    height: 200px;
+}
+
 .description {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     width: 200px;
 }
 
 #appDescription {
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
     margin: 0;
+    width: 200px;
 }
 
 .subHeading {
     font-family: Graffiti-Regular;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 img {
@@ -114,7 +119,7 @@ main {
 
 .container {
     width: 425px;
-    height: 425px;
+    height: 200px;
 }
 
 img {
@@ -151,6 +156,19 @@ footer {
     }
     #title {
         font-size: 100px;
+    }
+    #tagline {
+        font-size: 25px;
+    }
+    .subHeading {
+        font-size: 50px;
+    }
+    .description {
+        font-size: 20px;
+    }
+    #appDescription {
+        font-size: 30px;
+        width: 500px;
     }
     .quiz.container:hover {
         box-shadow: 0px 0px 10px;
