@@ -9,11 +9,12 @@
   font-size: 50px;
   text-align: center;
   margin: 0;
+  margin-top: 35px;
   animation-name: bounceIn;
   animation-duration: 2s;
 }
 
-/* 
+
 .cautionSpin {
   display: flex;
   flex-direction: row;
@@ -22,16 +23,16 @@
 }
 
 img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   /* padding: 15px 15px 10px 15px; */
-  /* border-style: none;
-  margin: 10px; */
+  border-style: none;
+  margin: 10px;
 
 
-/* }
+}
 
-#slidecaption {
+#spinner {
   background-size: cover;
  -webkit-animation-name: spinner; 
 -webkit-animation-timing-function: linear; 
@@ -56,19 +57,8 @@ outline: none;
 
 }
 
-WebKit and Opera browsers @-webkit-keyframes spinner { 
-/* from 
-{ 
-    -webkit-transform: rotateY(0deg); 
-    border-style: none;
-} 
-to { 
-    -webkit-transform: rotateY(-360deg); 
-    border-style: none;
-} 
-} /* all other browsers */ 
-/* @keyframes spinner {  */
-/* from { 
+@keyframes spinner { 
+from { 
     -moz-transform: rotateY(0deg); 
     -ms-transform: rotateY(0deg); 
     transform: rotateY(0deg); 
@@ -82,7 +72,7 @@ to
     border-style: none;
 
 } 
-} */
+}
 @keyframes bounceIn {
   from,
   20%,
