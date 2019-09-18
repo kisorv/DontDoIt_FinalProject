@@ -18,7 +18,6 @@ export class TopicsComponent implements OnInit {
   indexFlow() {
     if (this.index === 500) {
       this.index -= 500;
-      console.log(this.index);
     } else {
       this.index++;
     }
@@ -29,11 +28,7 @@ export class TopicsComponent implements OnInit {
       setInterval(this.indexFlow.bind(this), 10000);
 
       this.dontDoitService.getTextData().subscribe(response => {
-        console.log(response.data);
-
         this.textData = response.data;
-
-        console.log(this.textData);
       });
     }
   }
