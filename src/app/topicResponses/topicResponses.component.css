@@ -1,13 +1,12 @@
 :host {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-image: url("src/assets/caution.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 .sentence {
   color: #222;
@@ -92,11 +91,9 @@
   100% {
     opacity: 0;
   }
-
 }
 
 i {
-
   color: #f7c800;
   margin-right: 10px;
   animation-name: flash;
@@ -115,7 +112,6 @@ i {
   75% {
     opacity: 0;
   }
-
 }
 
 @keyframes flash {
@@ -132,34 +128,34 @@ i {
 }
 
 button {
-    color: black;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 15px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
 }
 
 .buttonContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
-    .buttonContainer {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    button {
-        padding: 20px;
-        margin: 10px;
-    }
-    button:hover {
-        background-color: black;
-        color: #f7c800;
-        border-color: black;
-    }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  button {
+    padding: 20px;
+    margin: 10px;
+  }
+  button:hover {
+    background-color: black;
+    color: #f7c800;
+    border-color: black;
+  }
 }
