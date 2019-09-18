@@ -8,27 +8,91 @@
     background-repeat: no-repeat;
 }
 
-.topicsWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.sentence {
+  color: #222;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 20%;
 }
 
-.topicsBox {
-    margin: 40px 0px;
-    background-color: white;
-    -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 20px;
-    width: 65%;
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-family: "Raleway", sans-serif;
+  margin: 100px auto;
+  padding: 40px 40px;
+  position: relative;
+  width: 70%;
+  height: 25%;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
 }
 
-div.topics {
-    font-weight: bold;
-    font-size: 16px;
-    padding: 0px 40px;
-    margin: 0;
+.slidingVertical {
+  display: inline;
+  text-indent: 8px;
+}
+.slidingVertical span {
+  animation: topToBottom 12.5s linear infinite 0s;
+  -ms-animation: topToBottom 12.5s linear infinite 0s;
+  -webkit-animation: topToBottom 12.5s linear infinite 0s;
+  color: #fdc700;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.slidingVertical span:nth-child(2) {
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3) {
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4) {
+  animation-delay: 7.5s;
+  -ms-animation-delay: 7.5s;
+  -webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5) {
+  animation-delay: 10s;
+  -ms-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+}
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+
 }
 
 i {
@@ -38,6 +102,20 @@ i {
   animation-name: flash;
   animation-duration: 2s;
   animation-iteration-count: 2;
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+
 }
 
 @keyframes flash {

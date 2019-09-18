@@ -9,70 +9,10 @@
   font-size: 50px;
   text-align: center;
   margin: 0;
-  margin-top: 35px;
   animation-name: bounceIn;
   animation-duration: 2s;
 }
 
-
-.cautionSpin {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: baseline;
-}
-
-img {
-  width: 100px;
-  height: 100px;
-  /* padding: 15px 15px 10px 15px; */
-  border-style: none;
-  margin: 10px;
-
-
-}
-
-#spinner {
-  background-size: cover;
- -webkit-animation-name: spinner; 
--webkit-animation-timing-function: linear; 
--webkit-animation-iteration-count: infinite; 
--webkit-animation-duration: 2s; 
-animation-name: spinner; 
-animation-timing-function: linear; 
-animation-iteration-count: infinite; 
-animation-duration: 2s; 
--webkit-transform-style: preserve-3d; 
--moz-transform-style: preserve-3d; 
--ms-transform-style: preserve-3d; 
-transform-style: preserve-3d;
-border-style: none;
-
-}
-
-img {
-border-style: none;
-outline: none;
-
-
-}
-
-@keyframes spinner { 
-from { 
-    -moz-transform: rotateY(0deg); 
-    -ms-transform: rotateY(0deg); 
-    transform: rotateY(0deg); 
-    border-style: none;
-} 
-to 
-{ 
-    -moz-transform: rotateY(-360deg); 
-    -ms-transform: rotateY(-360deg); 
-    transform: rotateY(-360deg); 
-    border-style: none;
-
-} 
-}
 @keyframes bounceIn {
   from,
   20%,

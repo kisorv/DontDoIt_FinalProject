@@ -22,14 +22,17 @@ form {
     width: 85%;
 }
 
-
 .questions {
-  font-size: 25px;
-  padding: 25px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .answers {
-  padding-left: 30px;
+    padding-left: 30px;
+}
+
+ol {
+    padding: 0px 40px;
 }
 
 /* div.answers:hover {
@@ -54,7 +57,6 @@ form {
   }
 } */
 
-
 button {
     color: white;
     font-size: 16px;
@@ -77,7 +79,6 @@ button:hover {
     padding: 25px;
 }
 
-
 @media only screen and (min-width: 768px) {
     button {
         padding: 20px;
@@ -85,9 +86,7 @@ button:hover {
     form {
         width: 65%;
     }
-
-p {
-  font-weight: 1000;
-}
- 
+    p {
+        font-weight: 1000;
+    }
 }

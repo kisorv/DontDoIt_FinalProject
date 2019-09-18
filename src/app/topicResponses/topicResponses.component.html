@@ -1,12 +1,20 @@
-<div class="topicsBox">
-
-  <div class="topics">
-    <p>{{ categoryMessage }}</p>
-    <p *ngFor="let answer of answers">
-      <i class="fas fa-exclamation-triangle"></i>{{ answer.item }}
-    </p>
-  </div>
-</div>
+<section class="wrapper">
+  <h2 class="sentence">
+    <i class="fas fa-exclamation-triangle"></i>{{ categoryMessage }}
+    <div class="slidingVertical">
+      <span>{{ answers[0].item }}</span>
+      <span>{{ answers[1].item }}</span>
+      <span>{{ answers[2].item }}</span>
+      <span>{{ answers[3].item }}</span>
+      <span>{{ answers[4].item }}</span>
+      <span>{{ answers[5].item }}</span>
+      <span>{{ answers[6].item }}</span>
+      <span>{{ answers[7].item }}</span>
+      <span>{{ answers[8].item }}</span>
+      <span>{{ answers[9].item }}</span>
+    </div>
+  </h2>
+</section>
 
 <section class="buttonContainer">
     <button (click)="[handleHomeClick()]">RETURN HOME</button>
