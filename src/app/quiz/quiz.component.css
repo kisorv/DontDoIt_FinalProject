@@ -5,7 +5,7 @@
 }
 .heading {
   font-family: Graffiti-Shadow;
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
   margin: 0;
   margin-top: 35px;
@@ -24,10 +24,11 @@ img {
   /* padding: 15px 15px 10px 15px; */
   border-style: none;
   margin: 10px;
+  margin-top: 20px;
 }
 #spinner {
   background-size: cover;
- -webkit-animation-name: spinner; 
+ /* -webkit-animation-name: spinner; 
 -webkit-animation-timing-function: linear; 
 -webkit-animation-iteration-count: infinite; 
 -webkit-animation-duration: 2s; 
@@ -38,14 +39,16 @@ animation-duration: 2s;
 -webkit-transform-style: preserve-3d; 
 -moz-transform-style: preserve-3d; 
 -ms-transform-style: preserve-3d; 
-transform-style: preserve-3d;
+transform-style: preserve-3d; */
 border-style: none;
+animation-name: bounceIn;
+animation-duration: 6s;
 }
 img {
 border-style: none;
 outline: none;
 }
-@keyframes spinner { 
+/* @keyframes spinner { 
 from { 
     -moz-transform: rotateY(0deg); 
     -ms-transform: rotateY(0deg); 
@@ -59,7 +62,7 @@ to
     transform: rotateY(-360deg); 
     border-style: none;
 } 
-}
+} */
 @keyframes bounceIn {
   from,
   20%,
