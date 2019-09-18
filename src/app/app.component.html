@@ -3,8 +3,9 @@
     <h1>Don't Do It</h1>
   </a>
   <div class="navBar">
-
-    <a class="nav" routerLinkActive="active" routerLink="/quiz">Risk Analysis</a>
+    <a class="nav" routerLinkActive="active" routerLink="/quiz"
+      >Risk Analysis</a
+    >
     <a class="nav" routerLinkActive="active" routerLink="/topics">Two Cents</a>
     <a class="nav" routerLinkActive="active" routerLink="/about">About</a>
   </div>
@@ -13,22 +14,18 @@
 <router-outlet></router-outlet>
 
 <footer>
+  <div class="footerNav">
+    <a class="footerLink" routerLink="/quiz">Risk Analysis</a>
+    <a class="footerLink" routerLink="/topics">Two Cents</a>
+    <a class="footerLink" routerLink="/about">About</a>
+  </div>
 
-    <div class="footerNav">
-        <a class="footerLink" routerLink="/quiz">Risk Analysis</a>
-        <a class="footerLink" routerLink="/topics">Two Cents</a>
-        <a class="footerLink" routerLink="/about">About</a>
-      </div>  
-    
-    <p class="footerInfo">Don't Email Us: DontDoItTeam@gmail.com</p>
-    <!-- <p class="footerCopyright">©2019</p> -->
+  <p class="footerInfo">info@DontDoIt.dev</p>
 
-    <div class="socialMediaIcons">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-twitter-square"></i>
-      <i class="fab fa-instagram"></i>
-    </div> 
-  </footer>
-  
-
-
+  <div class="socialMediaIcons">
+    <!-- <p>SOCIAL</p> -->
+    <i class="fab fa-facebook-square fa-lg"></i>
+    <i class="fab fa-twitter-square fa-lg"></i>
+    <i class="fab fa-instagram fa-lg"></i>
+  </div>
+</footer>
