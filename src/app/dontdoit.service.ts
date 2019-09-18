@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs";
+import { environment } from "../environments/environment";
 
 @Injectable({
   providedIn: "root"
@@ -20,11 +21,11 @@ export class DontdoitService {
   constructor(private http: HttpClient, private router: Router) {}
 
   getTopics(category: string) {
-    return this.http.get(`http://localhost:8080/topics/${category}`);
+    return this.http.get(`${environment.api}/topics/${category}`);
   }
 
   getQuestions(category: string) {
-    return this.http.get(`http://localhost:8080/quiz/${category}`);
+    return this.http.get(`${environment.api}/quiz/${category}`);
   }
 
   calculateScore(form: any, questions: any): any {
