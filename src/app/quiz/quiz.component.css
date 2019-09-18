@@ -2,10 +2,11 @@
   background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
   display: block;
   height: 100vh;
+  
 }
 .heading {
   font-family: Graffiti-Shadow;
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
   margin: 0;
   margin-top: 35px;
@@ -102,7 +103,7 @@ to
   }
 }
 .subHeading {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin: 20px 0px;
 }
@@ -120,10 +121,10 @@ to
 }
 button {
   color: white;
-  font-size: 25px;
+  font-size: 14px;
   font-weight: 700;
   background-color: black;
-  width: 30%;
+  width: 50%;
   padding: 20px;
   margin: 10px;
   border-radius: 15px;
@@ -147,6 +148,24 @@ button:hover {
     padding: 20px;
     margin: 10px;
     border-radius: 15px;
+  }
+
+  .heading {
+    font-size: 70px;
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .subHeading {
+    font-size: 30px;
+  }
+
+  .button {
+    font-size: 25px;
+    width: 30%;
   }
 }
 
