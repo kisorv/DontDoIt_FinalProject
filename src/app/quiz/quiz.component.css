@@ -107,12 +107,7 @@ to
   text-align: center;
   margin: 20px 0px;
 }
-/* .gif {
-  border: 0.5px solid gray;
-  background-size: contain;
-  display: flex;
-  align-items: center;
-} */
+
 .quizButtons {
   display: flex;
   flex-direction: column;
@@ -134,10 +129,7 @@ button:hover {
   color: black;
   border-color: black;
 }
-/* img {
-  width: 300px;
-  height: 300px;
-} */
+
 @media only screen and (min-width: 768px) {
   button {
     color: white;

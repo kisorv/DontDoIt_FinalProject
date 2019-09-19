@@ -1,13 +1,12 @@
 :host {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-image: url("src/assets/caution.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("src/assets/caution.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 .sentence {
   color: #222;
@@ -107,7 +106,6 @@ span {
   100% {
     opacity: 0;
   }
-
 }
 
 
@@ -118,7 +116,6 @@ span {
   margin-top: 5px;
 }
 i {
-
   color: #f7c800;
   margin-right: 10px;
   animation-name: flash;
@@ -139,7 +136,6 @@ i {
   75% {
     opacity: 0;
   }
-
 }
 
 @keyframes flash {
@@ -156,22 +152,23 @@ i {
 }
 
 button {
-    color: black;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 15px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
 }
 
 .buttonContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
+
     .buttonContainer {
         display: flex;
         justify-content: center;
@@ -209,3 +206,5 @@ button {
       font-size: 30px;
     }
 }
+ 
+
