@@ -16,7 +16,6 @@
   text-align: center;
 }
 
-
 .sign {
   display: flex;
   flex-direction: row;
@@ -43,41 +42,39 @@ span {
 .slidingVertical {
   display: flex;
   flex-direction: column;
-  
+
   padding-top: 20px;
   align-items: center;
-  
 }
 .slidingVertical span {
-  animation: topToBottom 12.5s linear infinite 0s;
-  -ms-animation: topToBottom 12.5s linear infinite 0s;
-  -webkit-animation: topToBottom 12.5s linear infinite 0s;
+  animation: topToBottom 37.5s linear infinite 0s;
+  -ms-animation: topToBottom 37.5s linear infinite 0s;
+  -webkit-animation: topToBottom 37.5s linear infinite 0s;
   color: #fdc700;
   opacity: 0;
   overflow: hidden;
   position: absolute;
   font-size: 20px;
-
 }
 .slidingVertical span:nth-child(2) {
-  animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-}
-.slidingVertical span:nth-child(3) {
-  animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-}
-.slidingVertical span:nth-child(4) {
   animation-delay: 7.5s;
   -ms-animation-delay: 7.5s;
   -webkit-animation-delay: 7.5s;
 }
+.slidingVertical span:nth-child(3) {
+  animation-delay: 15s;
+  -ms-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+}
+.slidingVertical span:nth-child(4) {
+  animation-delay: 22.5s;
+  -ms-animation-delay: 22.5s;
+  -webkit-animation-delay: 22.5s;
+}
 .slidingVertical span:nth-child(5) {
-  animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
+  animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  -webkit-animation-delay: 30s;
 }
 
 @keyframes topToBottom {
@@ -107,7 +104,6 @@ span {
     opacity: 0;
   }
 }
-
 
 .catMessage {
   color: #222;
@@ -168,43 +164,39 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  button {
+    padding: 20px;
+    margin: 10px;
+  }
+  button:hover {
+    background-color: black;
+    color: #f7c800;
+    border-color: black;
+  }
 
-    .buttonContainer {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    button {
-        padding: 20px;
-        margin: 10px;
-    }
-    button:hover {
-        background-color: black;
-        color: #f7c800;
-        border-color: black;
-    }
+  .wrapper {
+    height: 35%;
+    width: 50%;
+    padding: 30px 30px;
+  }
 
-    .wrapper {
-      height: 25%;
-      padding: 30px 30px;
-    }
+  .sentence {
+    font-size: 30px;
 
-    .sentence {
-      font-size: 30px;
-      
-      
-       margin-left: 25%;
-      
-    }
+    margin-left: 25%;
+  }
 
-    .slidingVertical span {
-      font-size: 24px;
-    }
+  .slidingVertical span {
+    font-size: 24px;
+  }
 
-    .catMessage {
-      color: #222;
-      font-size: 30px;
-    }
+  .catMessage {
+    color: #222;
+    font-size: 30px;
+  }
 }
- 
-

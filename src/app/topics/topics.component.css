@@ -1,7 +1,7 @@
 :host {
   display: block;
   height: 100vh;
-  
+
   background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
 }
 
@@ -60,7 +60,6 @@ img {
 }
 
 button {
-
   color: white;
   font-size: 20px;
   font-weight: 800;
@@ -76,13 +75,61 @@ button {
   flex-direction: row;
   justify-content: center;
   align-content: baseline;
-  
-  
 }
 button:hover {
   background-color: transparent;
   color: black;
   border-color: black;
+}
+
+#slidecaption {
+  background-size: cover;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border-style: none;
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+img {
+  border-style: none;
+  outline: none;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+    border-style: none;
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+    border-style: none;
+  }
+}
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-style: none;
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    border-style: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -108,12 +155,6 @@ button:hover {
     margin-top: 20px;
     margin-right: 15px;
     margin-left: 15px;
-}
-
-img {
-  border-style: none;
-  outline: none;
-
   }
 
   img {
@@ -146,34 +187,3 @@ img {
     }
   }
 }
-
-
-  @-webkit-keyframes spinner { 
-    from 
-    { 
-        -webkit-transform: rotateY(0deg); 
-        border-style: none;
-    } 
-    to { 
-        -webkit-transform: rotateY(-360deg); 
-        border-style: none;
-    } 
-}  
-@keyframes spinner { 
-    from { 
-        -moz-transform: rotateY(0deg); 
-        -ms-transform: rotateY(0deg); 
-        transform: rotateY(0deg); 
-        border-style: none;
-    } 
-    to 
-    { 
-        -moz-transform: rotateY(-360deg); 
-        -ms-transform: rotateY(-360deg); 
-        transform: rotateY(-360deg); 
-        border-style: none;
-    } 
-  }
-
-
-
