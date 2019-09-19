@@ -1,6 +1,7 @@
 :host {
   display: block;
   height: 100vh;
+  
   background-image: linear-gradient(to bottom right, #ffffff, #fdc700, #000000);
 }
 
@@ -47,8 +48,8 @@
 }
 
 img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .buttonWrapper {
