@@ -1,16 +1,16 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px;
 }
 
 h1 {
-    font-family: Graffiti-Regular;
-    font-size: 22px;
+  font-family: Graffiti-Regular;
+  font-size: 22px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -23,11 +23,11 @@ a{
 .nav {
   font-size: 20px;
   position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
 }
 
 .nav::before,
@@ -50,144 +50,143 @@ a{
 .nav:hover::before,
 .nav:hover::after {
   transform: scaleX(1);
+  transform-origin: center left;
 }
 
 .nav::after {
-  bottom: 0px;
+  bottom: 0;
   transform-origin: center left;
 }
 
 footer {
-    background-color: black;
-    color: white;
-    bottom: 0;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 20px;
-    width:100%;
-  }
+  background-color: black;
+  color: white;
+  bottom: 0;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+  width: 100%;
+}
 
-  .footerLink {
-    color: white;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-  }
+.footerLink {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+}
 
-  .footerLink:hover {
-    color: #fdc700;
-  }
-  
-  p {
-    display: flex;
-  }
-  .footerInfo{
-    margin: 0;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-  }
+.footerLink:hover {
+  color: #fdc700;
+}
 
-  .footerInfo:hover{
-    color: #fdc700;
-  }
-  
-  .footerCopyright{
-    font-size: 20px;
-    /* align-items: left;
+p {
+  display: flex;
+}
+.footerInfo {
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerInfo:hover {
+  color: #fdc700;
+}
+
+.footerCopyright {
+  font-size: 20px;
+  /* align-items: left;
     justify-content: left; */
-    margin:0;
-  
-  }
-    
-  .socialMediaIcons{
-    display: flex;
-    justify-content: center;  
-  }
-i{
+  margin: 0;
+}
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: center;
+}
+i {
   padding: 0px 20px;
 }
-  i:hover{
-    color: #fdc700;
-    
-  }
-  
-  .socialMediaWrapper {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-   
-  }
+i:hover {
+  color: #fdc700;
+}
+
+.socialMediaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
 
 @media only screen and (min-width: 768px) {
-    h1 {
-        font-family: Graffiti-Regular;
-        font-size: 32px;
+  h1 {
+    font-family: Graffiti-Regular;
+    font-size: 32px;
+  }
+  header {
+    margin: 0px 80px;
+  }
+  .nav::before,
+  .nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  .nav::before {
+    top: 20px;
+    transform-origin: center right;
+  }
+  .nav:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+  .nav::after {
+    bottom: 28px;
+    transform-origin: center left;
+  }
+  .nav:hover::after {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }
+  h1:hover {
+    animation-name: wobble;
+    animation-duration: 2s;
+  }
+  @keyframes wobble {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
-    header {
-        margin: 0px 80px;
+    15% {
+      -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
     }
-    .nav::before, .nav::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background-color: black;
-        transform: scaleX(0);
-        transition: transform 0.5s ease;
+    30% {
+      -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
     }
-    .nav::before {
-        top: 20px;
-        transform-origin: center right;
+    45% {
+      -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
     }
-    .nav:hover::before {
-        transform-origin: center left;
-        transform: scaleX(1);
+    60% {
+      -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
     }
-    .nav::after {
-        bottom: 28px;
-        transform-origin: center left;
+    75% {
+      -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
     }
-    .nav:hover::after {
-        transform-origin: center right;
-        transform: scaleX(1);
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
-    h1:hover {
-        animation-name: wobble;
-        animation-duration: 2s;
-    }
-    @keyframes wobble {
-        from {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-        15% {
-            -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-            transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-        }
-        30% {
-            -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-            transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-        }
-        45% {
-            -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-            transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-        }
-        60% {
-            -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-            transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-        }
-        75% {
-            -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-            transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-        }
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
+  }
 }

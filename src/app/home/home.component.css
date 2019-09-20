@@ -18,27 +18,33 @@
 /*Sentence*/
 .sentence {
   color: white;
-  font-size: 30px;
-  text-align: left;
+  font-size: 20px;
+  text-align: center;
   margin-left: 25%;
+ margin-bottom: 10px;
 }
 
 span {
   font-style: italic;
+  width: 250px;
 }
 /*Wrapper*/
 .wrapper {
   background-color: black;
   font-family: "Raleway", sans-serif;
+  /* font-size: 18px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: auto;
+  height: 150px;
   padding: 20px 20px;
   position: relative;
 }
 /*Horizontal Sliding*/
 .slidingHorizontal {
-  display: inline;
-
-  text-indent: 8px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 .slidingHorizontal span {
   animation: leftToRight 15s linear infinite 0s;
@@ -266,12 +272,46 @@ a {
   #tagline {
     font-size: 25px;
   }
+
+  .wrapper {
+    flex-wrap: nowrap;
+  }
   .subHeading {
     font-size: 50px;
   }
   .description {
     font-size: 20px;
   }
+
+  .sentence {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 25%;
+  }
+
+  span {
+    font-style: italic;
+    width: 600px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+  }
+  /*Wrapper*/
+  .wrapper {
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+    margin: auto;
+    padding: 20px 20px;
+    position: relative;
+  }
+  /*Horizontal Sliding*/
+  .slidingHorizontal {
+    display: inline;
+
+    text-indent: 8px;
+  }
+
   #appDescription {
     font-size: 30px;
     width: 500px;
