@@ -28,6 +28,7 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
+
 }
 
 .nav::before,
@@ -50,10 +51,11 @@ a {
 .nav:hover::before,
 .nav:hover::after {
   transform: scaleX(1);
+  transform-origin: center left;
 }
 
 .nav::after {
-  bottom: 0px;
+  bottom: 0;
   transform-origin: center left;
 }
 
@@ -63,6 +65,7 @@ footer {
   bottom: 0;
   height: 90px;
   display: flex;
+
   flex-direction: column;
 
   padding: 20px 20px 20px 20px;
@@ -204,16 +207,61 @@ i:hover {
     padding-top: 20px;
   }
 
-  .footerLink {
-    color: white;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-  }
 
-  .footerLink:hover {
-    color: #fdc700;
+.footerLink {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+}
+
+.footerLink:hover {
+  color: #fdc700;
+}
+
+p {
+  display: flex;
+}
+.footerInfo {
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerInfo:hover {
+  color: #fdc700;
+}
+
+.footerCopyright {
+  font-size: 20px;
+  /* align-items: left;
+    justify-content: left; */
+  margin: 0;
+}
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: center;
+}
+i {
+  padding: 0px 20px;
+}
+i:hover {
+  color: #fdc700;
+}
+
+.socialMediaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: Graffiti-Regular;
+    font-size: 32px;
   }
 
   p {
@@ -254,4 +302,5 @@ i:hover {
     flex-direction: row;
     align-content: flex-end;
   }
+
 }
