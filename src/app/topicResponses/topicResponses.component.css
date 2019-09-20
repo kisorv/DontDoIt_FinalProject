@@ -10,21 +10,29 @@
 
 .sentence {
   color: #222;
-  font-size: 30px;
-  text-align: left;
-  margin-left: 20%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
+.sign {
+  display: flex;
+  flex-direction: row;
+}
+span {
+  max-width: 50%;
+}
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: top;
   background-color: #f5f5f5;
   font-family: "Raleway", sans-serif;
-  margin: 100px auto;
+  margin: 75px 75px 30px 75px;
   padding: 40px 40px;
   position: relative;
   width: 70%;
-  height: 25%;
+  height: 50%;
   border-radius: 15px;
   -webkit-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
@@ -32,37 +40,41 @@
 }
 
 .slidingVertical {
-  display: inline;
-  text-indent: 8px;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 20px;
+  align-items: center;
 }
 .slidingVertical span {
-  animation: topToBottom 12.5s linear infinite 0s;
-  -ms-animation: topToBottom 12.5s linear infinite 0s;
-  -webkit-animation: topToBottom 12.5s linear infinite 0s;
+  animation: topToBottom 37.5s linear infinite 0s;
+  -ms-animation: topToBottom 37.5s linear infinite 0s;
+  -webkit-animation: topToBottom 37.5s linear infinite 0s;
   color: #fdc700;
   opacity: 0;
   overflow: hidden;
   position: absolute;
+  font-size: 20px;
 }
 .slidingVertical span:nth-child(2) {
-  animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-}
-.slidingVertical span:nth-child(3) {
-  animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-}
-.slidingVertical span:nth-child(4) {
   animation-delay: 7.5s;
   -ms-animation-delay: 7.5s;
   -webkit-animation-delay: 7.5s;
 }
+.slidingVertical span:nth-child(3) {
+  animation-delay: 15s;
+  -ms-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+}
+.slidingVertical span:nth-child(4) {
+  animation-delay: 22.5s;
+  -ms-animation-delay: 22.5s;
+  -webkit-animation-delay: 22.5s;
+}
 .slidingVertical span:nth-child(5) {
-  animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
+  animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  -webkit-animation-delay: 30s;
 }
 
 @keyframes topToBottom {
@@ -93,12 +105,20 @@
   }
 }
 
+.catMessage {
+  color: #222;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
 i {
   color: #f7c800;
   margin-right: 10px;
   animation-name: flash;
   animation-duration: 2s;
   animation-iteration-count: 2;
+  display: flex;
+  flex-direction: row;
 }
 
 @keyframes flash {
@@ -157,5 +177,26 @@ button {
     background-color: black;
     color: #f7c800;
     border-color: black;
+  }
+
+  .wrapper {
+    height: 35%;
+    width: 50%;
+    padding: 30px 30px;
+  }
+
+  .sentence {
+    font-size: 30px;
+
+    margin-left: 25%;
+  }
+
+  .slidingVertical span {
+    font-size: 24px;
+  }
+
+  .catMessage {
+    color: #222;
+    font-size: 30px;
   }
 }
