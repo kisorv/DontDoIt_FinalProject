@@ -28,7 +28,6 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-
 }
 
 .nav::before,
@@ -207,61 +206,16 @@ i:hover {
     padding-top: 20px;
   }
 
+  .footerLink {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+  }
 
-.footerLink {
-  color: white;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: none;
-}
-
-.footerLink:hover {
-  color: #fdc700;
-}
-
-p {
-  display: flex;
-}
-.footerInfo {
-  margin: 0;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.footerInfo:hover {
-  color: #fdc700;
-}
-
-.footerCopyright {
-  font-size: 20px;
-  /* align-items: left;
-    justify-content: left; */
-  margin: 0;
-}
-
-.socialMediaIcons {
-  display: flex;
-  justify-content: center;
-}
-i {
-  padding: 0px 20px;
-}
-i:hover {
-  color: #fdc700;
-}
-
-.socialMediaWrapper {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-}
-
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-family: Graffiti-Regular;
-    font-size: 32px;
+  .footerLink:hover {
+    color: #fdc700;
   }
 
   p {
@@ -281,7 +235,7 @@ i:hover {
   .footerCopyright {
     font-size: 20px;
     /* align-items: left;
-      justify-content: left; */
+    justify-content: left; */
     margin: 0;
   }
 
@@ -289,7 +243,6 @@ i:hover {
     display: flex;
     justify-content: center;
   }
-
   i {
     padding: 0px 20px;
   }
@@ -303,4 +256,49 @@ i:hover {
     align-content: flex-end;
   }
 
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-family: Graffiti-Regular;
+      font-size: 32px;
+    }
+
+    p {
+      display: flex;
+    }
+    .footerInfo {
+      margin: 0;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footerInfo:hover {
+      color: #fdc700;
+    }
+
+    .footerCopyright {
+      font-size: 20px;
+      /* align-items: left;
+      justify-content: left; */
+      margin: 0;
+    }
+
+    .socialMediaIcons {
+      display: flex;
+      justify-content: center;
+    }
+
+    i {
+      padding: 0px 20px;
+    }
+    i:hover {
+      color: #fdc700;
+    }
+
+    .socialMediaWrapper {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-end;
+    }
+  }
 }
